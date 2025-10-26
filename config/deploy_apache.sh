@@ -61,10 +61,28 @@ fi
 "${VENV_PATH}/bin/pip" install --upgrade pip
 "${VENV_PATH}/bin/pip" install -r "${PROJECT_ROOT}/requirements.txt"
 
+# Apply database migrations so the SQLite file exists and is up to date.
+echo "Applying database migrations..."
+"${VENV_PATH}/bin/python" "${PROJECT_ROOT}/manage.py" migrate --noinput
+
 # Collect static files so Apache can serve them.
 echo "Collecting static assets..."
 mkdir -p "${DJANGO_STATIC_ROOT}"
 "${VENV_PATH}/bin/python" "${PROJECT_ROOT}/manage.py" collectstatic --noinput
+
+# Ensure runtime directories are owned by the Apache user.
+APACHE_USER="www-data"
+if id -u "${APACHE_USER}" >/dev/null 2>&1; then
+  if [[ -f "${PROJECT_ROOT}/db.sqlite3" ]]; then
+    chown "${APACHE_USER}:${APACHE_USER}" "${PROJECT_ROOT}/db.sqlite3"
+  fi
+  if [[ -d "${PROJECT_ROOT}/media" ]]; then
+    chown -R "${APACHE_USER}:${APACHE_USER}" "${PROJECT_ROOT}/media"
+  fi
+  if [[ -d "${DJANGO_STATIC_ROOT}" ]]; then
+    chown -R "${APACHE_USER}:${APACHE_USER}" "${DJANGO_STATIC_ROOT}"
+  fi
+fi
 
 install_file() {
   local source_file="$1"
