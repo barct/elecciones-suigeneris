@@ -1,0 +1,866 @@
+[
+  {
+    "model": "elections.list",
+    "pk": 1,
+    "fields": {
+      "district": 1,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 2,
+    "fields": {
+      "district": 1,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 3,
+    "fields": {
+      "district": 1,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 4,
+    "fields": {
+      "district": 2,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 5,
+    "fields": {
+      "district": 2,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 6,
+    "fields": {
+      "district": 2,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 7,
+    "fields": {
+      "district": 3,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 8,
+    "fields": {
+      "district": 3,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 9,
+    "fields": {
+      "district": 3,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 10,
+    "fields": {
+      "district": 4,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 11,
+    "fields": {
+      "district": 4,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 12,
+    "fields": {
+      "district": 4,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 13,
+    "fields": {
+      "district": 5,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 14,
+    "fields": {
+      "district": 5,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 15,
+    "fields": {
+      "district": 5,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 16,
+    "fields": {
+      "district": 6,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 17,
+    "fields": {
+      "district": 6,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 18,
+    "fields": {
+      "district": 6,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 19,
+    "fields": {
+      "district": 7,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 20,
+    "fields": {
+      "district": 7,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 21,
+    "fields": {
+      "district": 7,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 22,
+    "fields": {
+      "district": 8,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 23,
+    "fields": {
+      "district": 8,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 24,
+    "fields": {
+      "district": 8,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 25,
+    "fields": {
+      "district": 9,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 26,
+    "fields": {
+      "district": 9,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 27,
+    "fields": {
+      "district": 9,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 28,
+    "fields": {
+      "district": 10,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 29,
+    "fields": {
+      "district": 10,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 30,
+    "fields": {
+      "district": 10,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 31,
+    "fields": {
+      "district": 11,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 32,
+    "fields": {
+      "district": 11,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 33,
+    "fields": {
+      "district": 11,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 34,
+    "fields": {
+      "district": 12,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 35,
+    "fields": {
+      "district": 12,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 36,
+    "fields": {
+      "district": 12,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 37,
+    "fields": {
+      "district": 13,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 38,
+    "fields": {
+      "district": 13,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 39,
+    "fields": {
+      "district": 13,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 40,
+    "fields": {
+      "district": 14,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 41,
+    "fields": {
+      "district": 14,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 42,
+    "fields": {
+      "district": 14,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 43,
+    "fields": {
+      "district": 15,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 44,
+    "fields": {
+      "district": 15,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 45,
+    "fields": {
+      "district": 15,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 46,
+    "fields": {
+      "district": 16,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 47,
+    "fields": {
+      "district": 16,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 48,
+    "fields": {
+      "district": 16,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 49,
+    "fields": {
+      "district": 17,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 50,
+    "fields": {
+      "district": 17,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 51,
+    "fields": {
+      "district": 17,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 52,
+    "fields": {
+      "district": 18,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 53,
+    "fields": {
+      "district": 18,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 54,
+    "fields": {
+      "district": 18,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 55,
+    "fields": {
+      "district": 19,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 56,
+    "fields": {
+      "district": 19,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 57,
+    "fields": {
+      "district": 19,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 58,
+    "fields": {
+      "district": 20,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 59,
+    "fields": {
+      "district": 20,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 60,
+    "fields": {
+      "district": 20,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 61,
+    "fields": {
+      "district": 21,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 62,
+    "fields": {
+      "district": 21,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 63,
+    "fields": {
+      "district": 21,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 64,
+    "fields": {
+      "district": 22,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 65,
+    "fields": {
+      "district": 22,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 66,
+    "fields": {
+      "district": 22,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 67,
+    "fields": {
+      "district": 23,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 68,
+    "fields": {
+      "district": 23,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 69,
+    "fields": {
+      "district": 23,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 70,
+    "fields": {
+      "district": 24,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 71,
+    "fields": {
+      "district": 24,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "502",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 72,
+    "fields": {
+      "district": 24,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "503",
+      "name": "Coalición Cívica",
+      "national_alignment": "Coalición Cívica"
+    }
+  }
+]
