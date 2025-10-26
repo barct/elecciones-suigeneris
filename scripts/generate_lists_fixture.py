@@ -8,12 +8,15 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 CSV_PATH = BASE_DIR / "docs" / "listas_con_filo.csv"
-DISTRICT_FIXTURE_PATH = BASE_DIR / "elections" / "fixtures" / "districts.json"
-OUTPUT_PATH = BASE_DIR / "elections" / "fixtures" / "lists.json"
+DISTRICT_OUTPUT_PATH = BASE_DIR / "elections" / "fixtures" / "districts.json"
+LIST_OUTPUT_PATH = BASE_DIR / "elections" / "fixtures" / "lists.json"
+DEPUTIES_CSV_PATH = BASE_DIR / "docs" / "diputados 2025.csv"
+SENATORS_CSV_PATH = BASE_DIR / "docs" / "senadores 2025.csv"
 
 DISTRICT_NAME_MAP = {
     "BUENOS AIRES": "Buenos Aires",
     "CABA": "Ciudad Autónoma de Buenos Aires",
+    "CIUDAD AUTONOMA DE BUENOS AIRES": "Ciudad Autónoma de Buenos Aires",
     "CATAMARCA": "Catamarca",
     "CHACO": "Chaco",
     "CHUBUT": "Chubut",
@@ -67,10 +70,38 @@ def pick_value(row: dict[str, str], *candidates: str, allow_empty: bool = False)
     raise KeyError(f"Columns {candidates} missing from row {row}")
 
 
-def load_district_ids() -> dict[str, int]:
-    with DISTRICT_FIXTURE_PATH.open("r", encoding="utf-8") as handle:
-        data = json.load(handle)
-    return {entry["fields"]["name"]: entry["pk"] for entry in data}
+def read_semicolon_csv(path: Path) -> list[dict[str, str]]:
+    encodings = ("utf-8-sig", "utf-8", "latin-1")
+    last_error: Exception | None = None
+    for encoding in encodings:
+        try:
+            with path.open("r", encoding=encoding, newline="") as handle:
+                reader = csv.DictReader(handle, delimiter=";")
+                rows: list[dict[str, str]] = []
+                for raw_row in reader:
+                    row: dict[str, str] = {}
+                    for key, value in raw_row.items():
+                        if key is None:
+                            continue
+                        row[key.strip()] = "" if value is None else str(value).strip()
+                    rows.append(row)
+                return rows
+        except UnicodeDecodeError as exc:
+            last_error = exc
+    raise RuntimeError(f"Could not decode CSV file {path} using expected encodings") from last_error
+
+
+def parse_int(value: str | None) -> int:
+    if value is None:
+        return 0
+    text = value.strip()
+    if not text:
+        return 0
+    cleaned = text.replace(".", "").replace(",", "")
+    try:
+        return int(cleaned)
+    except ValueError as exc:
+        raise ValueError(f"Could not parse integer from '{value}'") from exc
 
 
 def normalise_code(raw_code: str, counters: dict[str, int], label: str) -> str:
@@ -81,18 +112,94 @@ def normalise_code(raw_code: str, counters: dict[str, int], label: str) -> str:
     return f"SC{counters[label]:02d}"
 
 
-def build_fixture() -> list[dict]:
-    district_ids = load_district_ids()
-    grouped: dict[str, list[dict]] = defaultdict(list)
-
+def load_rows() -> list[tuple[str, dict[str, str]]]:
+    records: list[tuple[str, dict[str, str]]] = []
     with CSV_PATH.open("r", encoding="utf-8-sig", newline="") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             district_label = pick_value(row, "distrito", "Provincia")
             internal_name = normalise_label(district_label)
-            if internal_name not in district_ids:
-                raise ValueError(f"District '{internal_name}' not present in fixtures")
-            grouped[internal_name].append(row)
+            records.append((internal_name, row))
+    if not records:
+        raise RuntimeError("CSV file appears to be empty")
+    return records
+
+
+def load_deputy_metrics() -> dict[str, tuple[int, int, int]]:
+    path = DEPUTIES_CSV_PATH
+    if not path.exists():
+        raise FileNotFoundError(f"Missing deputies CSV at {path}")
+    metrics: dict[str, tuple[int, int, int]] = {}
+    for row in read_semicolon_csv(path):
+        district_label = pick_value(row, "Provincia", "Distrito")
+        internal_name = normalise_label(district_label)
+        renewal = parse_int(row.get("Bancas en juego (2025)") or row.get("Renuevan diputados"))
+        total = parse_int(row.get("Bancas totales (Diputados)") or row.get("Total diputados"))
+        voters = parse_int(row.get("Electores"))
+        metrics[internal_name] = (renewal, total, voters)
+    if not metrics:
+        raise RuntimeError(f"No deputy data found in {path}")
+    return metrics
+
+
+def load_senator_metrics() -> dict[str, tuple[int, int]]:
+    path = SENATORS_CSV_PATH
+    if not path.exists():
+        raise FileNotFoundError(f"Missing senators CSV at {path}")
+    metrics: dict[str, tuple[int, int]] = {}
+    for row in read_semicolon_csv(path):
+        district_label = pick_value(row, "Provincia", "Distrito")
+        internal_name = normalise_label(district_label)
+        renewal = parse_int(row.get("Senadores_en_juego_2025") or row.get("Renuevan senadores"))
+        total = parse_int(row.get("Senadores_totales") or row.get("Total senadores"))
+        metrics[internal_name] = (renewal, total)
+    if not metrics:
+        raise RuntimeError(f"No senator data found in {path}")
+    return metrics
+
+
+def build_district_fixture(records: list[tuple[str, dict[str, str]]]) -> tuple[dict[str, int], list[dict]]:
+    deputy_data = load_deputy_metrics()
+    senator_data = load_senator_metrics()
+
+    referenced_districts = {name for name, _ in records}
+    combined_names = sorted(set(deputy_data) | set(senator_data) | referenced_districts)
+
+    mapping: dict[str, int] = {}
+    fixture: list[dict] = []
+
+    for index, district_name in enumerate(combined_names, start=1):
+        dep_renewal, dep_total, voters = deputy_data.get(district_name, (0, 0, 0))
+        sen_renewal, sen_total = senator_data.get(district_name, (0, 0))
+        mapping[district_name] = index
+        fixture.append(
+            {
+                "model": "elections.district",
+                "pk": index,
+                "fields": {
+                    "name": district_name,
+                    "renewal_seats": dep_renewal,
+                    "total_deputies": dep_total,
+                    "registered_voters": voters,
+                    "senator_renewal_seats": sen_renewal,
+                    "total_senators": sen_total,
+                },
+            }
+        )
+
+    missing = sorted(referenced_districts - set(mapping))
+    if missing:
+        raise RuntimeError(
+            "Districts present in list CSV but missing metrics: " + ", ".join(missing)
+        )
+
+    return mapping, fixture
+
+
+def build_list_fixture(records: list[tuple[str, dict[str, str]]], district_ids: dict[str, int]) -> list[dict]:
+    grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for internal_name, row in records:
+        grouped[internal_name].append(row)
 
     fixture: list[dict] = []
     pk_counter = 1
@@ -134,12 +241,19 @@ def build_fixture() -> list[dict]:
     return fixture
 
 
-def main() -> None:
-    entries = build_fixture()
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with OUTPUT_PATH.open("w", encoding="utf-8") as handle:
+def write_fixture(path: Path, entries: list[dict]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as handle:
         json.dump(entries, handle, ensure_ascii=False, indent=2)
         handle.write("\n")
+
+
+def main() -> None:
+    records = load_rows()
+    district_ids, district_entries = build_district_fixture(records)
+    list_entries = build_list_fixture(records, district_ids)
+    write_fixture(DISTRICT_OUTPUT_PATH, district_entries)
+    write_fixture(LIST_OUTPUT_PATH, list_entries)
 
 
 if __name__ == "__main__":
