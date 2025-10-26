@@ -11,6 +11,8 @@ PYTHON_BIN="python3"
 APACHE_SITES_AVAILABLE="/etc/apache2/sites-available"
 APACHE_CONF_AVAILABLE="/etc/apache2/conf-available"
 export DJANGO_STATIC_ROOT="${PROJECT_ROOT}/staticfiles"
+CERTBOT_DOMAIN="legislativas2025.fernandohidalgo.com.ar"
+CERTBOT_EMAIL="admin@example.com"
 
 # Ensure the source tree is present and up to date before touching Apache.
 if [[ ! -d "${PROJECT_ROOT}" ]]; then
@@ -118,6 +120,43 @@ install_file() {
   echo "Installed ${source_file} -> ${destination}"
 }
 
+ensure_certbot_certificate() {
+  if [[ -z "${CERTBOT_DOMAIN}" || -z "${CERTBOT_EMAIL}" ]]; then
+    echo "Skipping Certbot setup; CERTBOT_DOMAIN or CERTBOT_EMAIL is empty."
+    return
+  fi
+
+  if [[ -d "/etc/letsencrypt/live/${CERTBOT_DOMAIN}" ]]; then
+    echo "Existing Let's Encrypt certificate found. Running certbot renew..."
+    if command -v certbot >/dev/null 2>&1; then
+      certbot renew --deploy-hook "systemctl reload apache2"
+    else
+      echo "WARNING: certbot not installed; cannot renew existing certificate." >&2
+    fi
+    return
+  fi
+
+  if ! command -v certbot >/dev/null 2>&1; then
+    if command -v apt-get >/dev/null 2>&1; then
+      echo "Installing certbot and Apache plugin..."
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get update
+      apt-get install -y certbot python3-certbot-apache
+    else
+      echo "ERROR: certbot not found and apt-get unavailable; install certbot manually." >&2
+      return
+    fi
+  fi
+
+  echo "Requesting Let's Encrypt certificate for ${CERTBOT_DOMAIN}..."
+  certbot --apache \
+    --non-interactive \
+    --agree-tos \
+    -m "${CERTBOT_EMAIL}" \
+    -d "${CERTBOT_DOMAIN}" \
+    --redirect
+}
+
 # Copy virtual host and optional envvars config.
 install_file "${PROJECT_ROOT}/config/apache/legis_site.conf" "${APACHE_SITES_AVAILABLE}/${SITE_NAME}.conf"
 install_file "${PROJECT_ROOT}/config/apache/envvars.conf" "${APACHE_CONF_AVAILABLE}/${SITE_NAME}-env.conf"
@@ -135,5 +174,7 @@ apache2ctl configtest
 
 echo "Reloading Apache service..."
 systemctl reload apache2
+
+ensure_certbot_certificate
 
 echo "Done. Check /var/log/apache2/legis_site_error.log for issues if the site is unreachable."
