@@ -29,6 +29,9 @@ FILTER_DETAIL_BY_CHAMBER = {
 def _ensure_full_percentage(entries: list[dict], *, latest_update=None) -> None:
 	"""Garantiza que la suma de porcentajes alcance el 100% agregando un item "Otros"."""
 
+	if not entries:
+		return
+
 	total = sum(entry.get("percentage", Decimal("0")) for entry in entries)
 	remainder = TOTAL_PERCENTAGE - total
 	if remainder > PERCENT_TOLERANCE:
@@ -225,8 +228,10 @@ def dashboard(request):
 		deputy_data["lists"].sort(
 			key=lambda entry: (-entry.get("seats", 0), -entry["percentage"], entry["name"])
 		)
-		total_deputy_seats += deputy_data["seats"]
-		total_lists_by_chamber[List.Chamber.DEPUTIES] += len(deputy_data["lists"])
+		has_deputy_data = bool(deputy_data["lists"])
+		if has_deputy_data:
+			total_deputy_seats += deputy_data["seats"]
+			total_lists_by_chamber[List.Chamber.DEPUTIES] += len(deputy_data["lists"])
 
 		senate_data = chamber_payload[List.Chamber.SENATORS]
 		senate_allocation = _senate_allocation(senate_data["votes"], senate_data["seats"])
@@ -241,9 +246,20 @@ def dashboard(request):
 		senate_data["lists"].sort(
 			key=lambda entry: (-entry.get("seats", 0), -entry["percentage"], entry["name"])
 		)
-		if senate_data["seats"]:
-			total_senate_seats += senate_data["seats"]
+		has_senate_data = bool(senate_data["lists"])
+		if has_senate_data:
+			if senate_data["seats"]:
+				total_senate_seats += senate_data["seats"]
 		total_lists_by_chamber[List.Chamber.SENATORS] += len(senate_data["lists"])
+
+		should_include_district = False
+		if include_deputies and has_deputy_data:
+			should_include_district = True
+		if include_senators and has_senate_data:
+			should_include_district = True
+
+		if not should_include_district:
+			continue
 
 		districts_data.append(
 			{

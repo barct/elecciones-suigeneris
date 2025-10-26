@@ -95,6 +95,26 @@ class DashboardViewTests(TestCase):
 		otros_entry = next(entry for entry in district_data["deputies"]["lists"] if entry["name"] == "Otros")
 		self.assertEqual(otros_entry["percentage_display"], "6.00")
 
+	def test_district_without_scrutiny_is_hidden(self):
+		district = District.objects.create(
+			name="Distrito Sin Datos",
+			renewal_seats=3,
+			total_deputies=6,
+			registered_voters=45000,
+		)
+		List.objects.create(
+			district=district,
+			chamber=List.Chamber.DEPUTIES,
+			order=1,
+			code="SD01",
+			name="Sin Datos",
+		)
+
+		response = self.client.get(reverse("portal:dashboard"))
+		self.assertEqual(response.status_code, 200)
+		visible_districts = [entry["name"] for entry in response.context["districts"]]
+		self.assertNotIn("Distrito Sin Datos", visible_districts)
+
 	def test_senate_allocation_majority_and_first_minority(self):
 		district = District.objects.create(
 			name="Distrito Senado",
