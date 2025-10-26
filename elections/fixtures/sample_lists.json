@@ -1,0 +1,242 @@
+[
+  {
+    "model": "elections.list",
+    "pk": 1,
+    "fields": {
+      "district": 1,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "501",
+      "name": "Unión por la Patria",
+      "national_alignment": "Unión por la Patria"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 2,
+    "fields": {
+      "district": 1,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "504",
+      "name": "Juntos por el Cambio",
+      "national_alignment": "Juntos por el Cambio"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 3,
+    "fields": {
+      "district": 1,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "508",
+      "name": "La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 10,
+    "fields": {
+      "district": 1,
+      "chamber": "diputados",
+      "order": 4,
+      "code": "515",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda y de Trabajadores - Unidad"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 4,
+    "fields": {
+      "district": 2,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "201",
+      "name": "Juntos por el Cambio",
+      "national_alignment": "Juntos por el Cambio"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 6,
+    "fields": {
+      "district": 2,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "209",
+      "name": "Unión por la Patria",
+      "national_alignment": "Unión por la Patria"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 5,
+    "fields": {
+      "district": 2,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "205",
+      "name": "La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 17,
+    "fields": {
+      "district": 2,
+      "chamber": "diputados",
+      "order": 4,
+      "code": "215",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda y de Trabajadores - Unidad"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 20,
+    "fields": {
+      "district": 2,
+      "chamber": "diputados",
+      "order": 5,
+      "code": "228",
+      "name": "Partido Libertario",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 7,
+    "fields": {
+      "district": 3,
+      "chamber": "diputados",
+      "order": 1,
+      "code": "301",
+      "name": "La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 8,
+    "fields": {
+      "district": 3,
+      "chamber": "diputados",
+      "order": 2,
+      "code": "304",
+      "name": "Hacemos por Nuestro País",
+      "national_alignment": "Hacemos por Nuestro País"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 9,
+    "fields": {
+      "district": 3,
+      "chamber": "diputados",
+      "order": 3,
+      "code": "309",
+      "name": "Juntos por el Cambio",
+      "national_alignment": "Juntos por el Cambio"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 11,
+    "fields": {
+      "district": 3,
+      "chamber": "diputados",
+      "order": 4,
+      "code": "312",
+      "name": "Unión por la Patria",
+      "national_alignment": "Unión por la Patria"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 12,
+    "fields": {
+      "district": 3,
+      "chamber": "diputados",
+      "order": 5,
+      "code": "318",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda y de Trabajadores - Unidad"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 13,
+    "fields": {
+      "district": 1,
+      "chamber": "senadores",
+      "order": 1,
+      "code": "S501",
+      "name": "Unión por la Patria",
+      "national_alignment": "Unión por la Patria"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 14,
+    "fields": {
+      "district": 1,
+      "chamber": "senadores",
+      "order": 2,
+      "code": "S504",
+      "name": "Juntos por el Cambio",
+      "national_alignment": "Juntos por el Cambio"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 15,
+    "fields": {
+      "district": 1,
+      "chamber": "senadores",
+      "order": 3,
+      "code": "S508",
+      "name": "La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 16,
+    "fields": {
+      "district": 1,
+      "chamber": "senadores",
+      "order": 4,
+      "code": "S515",
+      "name": "Frente de Izquierda y de Trabajadores - Unidad",
+      "national_alignment": "Frente de Izquierda y de Trabajadores - Unidad"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 18,
+    "fields": {
+      "district": 2,
+      "chamber": "senadores",
+      "order": 1,
+      "code": "S201",
+      "name": "La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
+    }
+  },
+  {
+    "model": "elections.list",
+    "pk": 19,
+    "fields": {
+      "district": 2,
+      "chamber": "senadores",
+      "order": 2,
+      "code": "S202",
+      "name": "Partido Libertario",
+      "national_alignment": "La Libertad Avanza"
+    }
+  }
+]

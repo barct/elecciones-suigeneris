@@ -1,0 +1,93 @@
+{% extends "portal/base.html" %}
+
+{% block content %}
+<div class="row">
+  <div class="col-lg-4">
+    <div class="card card-outline card-primary">
+      <div class="card-header">
+        <h3 class="card-title">Seleccionar distrito</h3>
+      </div>
+      <div class="card-body">
+        <form method="get" class="form">
+          {% for field in selection_form %}
+            <div class="form-group">
+              <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+              {{ field }}
+              {% if field.help_text %}
+                <small class="form-text text-muted">{{ field.help_text }}</small>
+              {% endif %}
+              {% for error in field.errors %}
+                <span class="text-danger small d-block">{{ error }}</span>
+              {% endfor %}
+            </div>
+          {% endfor %}
+          <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-search mr-1"></i> Buscar listas</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-8">
+    {% if selected_district and list_forms %}
+      <div class="card card-outline card-success">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h3 class="card-title mb-0">{{ selected_district.name }} · {{ selected_chamber|capfirst }}</h3>
+          <span class="badge badge-primary">{{ list_forms|length }} listas</span>
+        </div>
+        <form method="post">
+          {% csrf_token %}
+          <input type="hidden" name="district" value="{{ selected_district.pk }}" />
+          <input type="hidden" name="chamber" value="{{ selected_chamber }}" />
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-striped mb-0">
+                <thead>
+                  <tr>
+                    <th style="width: 80px;">Orden</th>
+                    <th>Lista</th>
+                    <th style="width: 140px;">Porcentaje</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for election_list, form in list_forms %}
+                    <tr>
+                      <td class="align-middle">{{ election_list.order }}</td>
+                      <td class="align-middle">
+                        <strong>{{ election_list.code }}</strong><br />
+                        <span class="text-muted">{{ election_list.name }}</span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="form-group mb-0">
+                          {{ form.percentage }}
+                          {% for error in form.percentage.errors %}
+                            <span class="text-danger small d-block">{{ error }}</span>
+                          {% endfor %}
+                        </div>
+                      </td>
+                    </tr>
+                  {% empty %}
+                    <tr>
+                      <td colspan="3" class="text-center text-muted py-5">No hay listas cargadas para esta cámara.</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card-footer text-right">
+            <button type="submit" class="btn btn-success"><i class="fas fa-save mr-1"></i> Guardar escrutinio</button>
+          </div>
+        </form>
+      </div>
+    {% elif selected_district %}
+      <div class="alert alert-info">
+        No se encontraron listas para {{ selected_district.name }} en la cámara seleccionada.
+      </div>
+    {% else %}
+      <div class="alert alert-secondary">
+        Seleccione un distrito para comenzar la carga de porcentajes.
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

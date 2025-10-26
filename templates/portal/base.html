@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {% block title %}{{ page_title|default:"Panel" }}{% endblock %} · Legislación 2025
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css" />
+    <link rel="stylesheet" href="{% static 'portal/css/dashboard.css' %}" />
+    {% block extra_head %}{% endblock %}
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block"><a href="{% url 'portal:dashboard' %}" class="nav-link">Elecciones 2025</a></li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown user-menu">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fas fa-user-circle fa-lg"></i>
+              <span class="d-none d-md-inline">{{ request.user|default:"Invitado" }}</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <li class="user-header bg-primary">
+                <i class="fas fa-landmark fa-3x mb-2"></i>
+                <p>
+                  Elecciones Legislativas 2025
+                  <small>Datos provisionales</small>
+                </p>
+              </li>
+              <li class="user-footer">
+                <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                <a href="#" class="btn btn-default btn-flat float-right">Cerrar sesión</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <a href="{% url 'portal:dashboard' %}" class="brand-link">
+          <span class="brand-text font-weight-light">Elecciones 2025</span>
+        </a>
+        <div class="sidebar">
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <i class="fas fa-gavel text-white-50 fa-lg"></i>
+            </div>
+            <div class="info">
+              <a href="{% url 'portal:dashboard' %}" class="d-block">Escrutinio nacional</a>
+            </div>
+          </div>
+
+          <nav class="mt-2">
+            {% with namespace=request.resolver_match.namespace %}
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-item">
+                <a href="{% url 'portal:dashboard' %}" class="nav-link {% if namespace == 'portal' %}active{% endif %}">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>Resultados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'ingest:data-entry' %}" class="nav-link {% if namespace == 'ingest' %}active{% endif %}">
+                  <i class="nav-icon fas fa-keyboard"></i>
+                  <p>Carga de datos</p>
+                </a>
+              </li>
+            </ul>
+            {% endwith %}
+          </nav>
+
+          <div class="sidebar-custom">
+            <span class="text-xs text-muted">Actualizado {% now "d/m/Y H:i" %}</span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="content-wrapper">
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2 align-items-center">
+              <div class="col-sm-6">
+                <h1 class="m-0">{{ page_title|default:"Panel" }}</h1>
+                <p class="text-muted mb-0">Resultados del 26 de octubre de 2025</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="float-sm-right">
+                  {% block actions %}{% endblock %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="content">
+          <div class="container-fluid">
+            {% if messages %}
+              <div class="row">
+                <div class="col-12">
+                  {% for message in messages %}
+                    <div class="alert alert-{{ message.tags|default:"info" }} alert-dismissible fade show" role="alert">
+                      {{ message }}
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+            {% block content %}{% endblock %}
+          </div>
+        </section>
+      </div>
+
+      <footer class="main-footer small">
+        <strong>© {% now "Y" %} Fernando Hidalgo.</strong>
+        <span class="d-none d-sm-inline-block">Construido con IA.</span>
+        <div class="float-right d-none d-sm-inline">
+          Versión beta
+        </div>
+      </footer>
+
+      <aside class="control-sidebar control-sidebar-dark"></aside>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+    {% block extra_js %}{% endblock %}
+  </body>
+</html>

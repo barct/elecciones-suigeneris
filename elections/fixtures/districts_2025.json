@@ -1,0 +1,290 @@
+[
+  {
+    "model": "elections.district",
+    "pk": 1,
+    "fields": {
+      "name": "Buenos Aires",
+      "renewal_seats": 35,
+      "total_deputies": 70,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 2,
+    "fields": {
+      "name": "Catamarca",
+      "renewal_seats": 3,
+      "total_deputies": 5,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 3,
+    "fields": {
+      "name": "Chaco",
+      "renewal_seats": 4,
+      "total_deputies": 7,
+      "registered_voters": 0,
+      "senator_renewal_seats": 3,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 4,
+    "fields": {
+      "name": "Chubut",
+      "renewal_seats": 2,
+      "total_deputies": 5,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 5,
+    "fields": {
+      "name": "Ciudad Autónoma de Buenos Aires",
+      "renewal_seats": 13,
+      "total_deputies": 25,
+      "registered_voters": 0,
+      "senator_renewal_seats": 3,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 6,
+    "fields": {
+      "name": "Corrientes",
+      "renewal_seats": 3,
+      "total_deputies": 7,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 7,
+    "fields": {
+      "name": "Córdoba",
+      "renewal_seats": 9,
+      "total_deputies": 18,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 8,
+    "fields": {
+      "name": "Entre Ríos",
+      "renewal_seats": 5,
+      "total_deputies": 9,
+      "registered_voters": 0,
+      "senator_renewal_seats": 3,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 9,
+    "fields": {
+      "name": "Formosa",
+      "renewal_seats": 2,
+      "total_deputies": 5,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 10,
+    "fields": {
+      "name": "Jujuy",
+      "renewal_seats": 3,
+      "total_deputies": 6,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 11,
+    "fields": {
+      "name": "La Pampa",
+      "renewal_seats": 3,
+      "total_deputies": 5,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 12,
+    "fields": {
+      "name": "La Rioja",
+      "renewal_seats": 2,
+      "total_deputies": 5,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 13,
+    "fields": {
+      "name": "Mendoza",
+      "renewal_seats": 5,
+      "total_deputies": 10,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 14,
+    "fields": {
+      "name": "Misiones",
+      "renewal_seats": 3,
+      "total_deputies": 7,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 15,
+    "fields": {
+      "name": "Neuquén",
+      "renewal_seats": 3,
+      "total_deputies": 5,
+      "registered_voters": 0,
+      "senator_renewal_seats": 3,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 16,
+    "fields": {
+      "name": "Río Negro",
+      "renewal_seats": 2,
+      "total_deputies": 5,
+      "registered_voters": 0,
+      "senator_renewal_seats": 3,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 17,
+    "fields": {
+      "name": "Salta",
+      "renewal_seats": 3,
+      "total_deputies": 7,
+      "registered_voters": 0,
+      "senator_renewal_seats": 3,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 18,
+    "fields": {
+      "name": "San Juan",
+      "renewal_seats": 3,
+      "total_deputies": 6,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 19,
+    "fields": {
+      "name": "San Luis",
+      "renewal_seats": 3,
+      "total_deputies": 5,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 20,
+    "fields": {
+      "name": "Santa Cruz",
+      "renewal_seats": 3,
+      "total_deputies": 5,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 21,
+    "fields": {
+      "name": "Santa Fe",
+      "renewal_seats": 9,
+      "total_deputies": 19,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 22,
+    "fields": {
+      "name": "Santiago del Estero",
+      "renewal_seats": 3,
+      "total_deputies": 7,
+      "registered_voters": 0,
+      "senator_renewal_seats": 3,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 23,
+    "fields": {
+      "name": "Tierra del Fuego",
+      "renewal_seats": 2,
+      "total_deputies": 5,
+      "registered_voters": 0,
+      "senator_renewal_seats": 3,
+      "total_senators": 3
+    }
+  },
+  {
+    "model": "elections.district",
+    "pk": 24,
+    "fields": {
+      "name": "Tucumán",
+      "renewal_seats": 4,
+      "total_deputies": 9,
+      "registered_voters": 0,
+      "senator_renewal_seats": 0,
+      "total_senators": 3
+    }
+  }
+]

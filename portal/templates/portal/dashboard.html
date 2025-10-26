@@ -1,0 +1,244 @@
+{% extends "portal/base.html" %}
+{% load humanize %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block actions %}
+  <span class="badge badge-primary">Escrutinio provisorio</span>
+{% endblock %}
+
+{% block content %}
+  <div class="row mb-3">
+    <div class="col-12 d-flex justify-content-end">
+      <div class="btn-group btn-group-sm" role="group" aria-label="Filtro de cámara">
+        <a class="btn {% if chamber_filter == 'ambos' %}btn-primary{% else %}btn-outline-primary{% endif %}" href="{% url 'portal:dashboard' %}?chamber=ambos">Ambas cámaras</a>
+        <a class="btn {% if chamber_filter == 'diputados' %}btn-primary{% else %}btn-outline-primary{% endif %}" href="{% url 'portal:dashboard' %}?chamber=diputados">Diputados</a>
+        <a class="btn {% if chamber_filter == 'senadores' %}btn-primary{% else %}btn-outline-primary{% endif %}" href="{% url 'portal:dashboard' %}?chamber=senadores">Senadores</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    {% for item in stats %}
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="small-box bg-{{ item.color }}">
+          <div class="inner">
+            <h3>{{ item.value }}</h3>
+            <p class="mb-1">{{ item.label }}</p>
+            {% if item.detail %}
+              <p class="small text-white-50 mb-0">{{ item.detail }}</p>
+            {% endif %}
+          </div>
+          <div class="icon">
+            <i class="{{ item.icon }}"></i>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      <div class="col-12">
+        <div class="alert alert-info mb-4">Aún no hay estadísticas disponibles.</div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="row">
+    <section class="col-lg-8">
+      <div class="card card-outline card-primary h-100">
+        <div class="card-header border-0 d-flex justify-content-between align-items-center">
+          <h3 class="card-title">Distribución nacional de bancas</h3>
+        </div>
+        <div class="card-body">
+          {% for distribution in overall_distributions %}
+            <div class="mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="h6 font-weight-bold mb-0">{{ distribution.label }}</h4>
+                <span class="text-muted text-xs">{{ distribution.method }}</span>
+              </div>
+              {% if distribution.items %}
+                {% for item in distribution.items %}
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                      <span class="font-weight-bold">{{ item.name }}</span>
+                      <span class="text-muted">{{ item.seats }} bancas</span>
+                    </div>
+                    <div class="progress progress-sm" data-progress="{{ item.share|floatformat:1 }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-primary"></div>
+                    </div>
+                  </div>
+                {% endfor %}
+              {% else %}
+                <p class="text-muted mb-0">Todavía no hay bancas asignadas en esta cámara.</p>
+              {% endif %}
+            </div>
+            {% if not forloop.last %}
+              <hr class="border-light" />
+            {% endif %}
+          {% empty %}
+            <p class="text-muted mb-0">Todavía no hay bancas asignadas a nivel nacional.</p>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="col-lg-4">
+      <div class="card card-outline card-info h-100">
+        <div class="card-header border-0">
+          <h3 class="card-title">Cronograma electoral</h3>
+        </div>
+        <div class="card-body">
+          <ul class="portal-timeline">
+            {% for event in timeline %}
+              <li class="portal-timeline__item">
+                <span class="portal-timeline__badge"><i class="fas fa-calendar"></i></span>
+                <div class="portal-timeline__card">
+                  <p class="portal-timeline__date">{{ event.date|date:"d/m/Y" }}</p>
+                  <p class="portal-timeline__title">{{ event.title }}</p>
+                  <p class="portal-timeline__description">{{ event.description }}</p>
+                </div>
+              </li>
+            {% empty %}
+              <li class="portal-timeline__item">
+                <div class="portal-timeline__card">
+                  <p class="mb-0 text-muted">No hay hitos programados.</p>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="row">
+    {% for district in districts %}
+      <section class="col-12 col-xl-6">
+        <div class="card card-outline card-success h-100">
+          <div class="card-header border-0 d-flex justify-content-between align-items-start">
+            <div>
+              <h3 class="card-title mb-0">{{ district.name }}</h3>
+              {% if show_deputies %}
+                <span class="text-muted text-sm">Diputados: {{ district.deputies.seats }} en disputa</span>
+              {% endif %}
+              {% if show_senators and district.senators.seats %}
+                <span class="badge badge-light text-muted border ml-1">Senadores: {{ district.senators.seats }} de {{ district.total_senators }}</span>
+              {% elif show_senators %}
+                <span class="badge badge-light text-muted border ml-1">Sin renovación de senadores</span>
+              {% endif %}
+            </div>
+            <div class="card-tools text-muted text-sm text-right">
+              {{ district.registered_voters|intcomma }} electores
+            </div>
+          </div>
+          <div class="card-body p-0">
+            {% if show_deputies %}
+              {% if district.deputies.lists %}
+                <div class="px-3 pt-3 d-flex justify-content-between align-items-center">
+                  <h4 class="h6 text-uppercase text-muted mb-0">Cámara de Diputados</h4>
+                  <a class="btn btn-outline-primary btn-sm" href="{% url 'portal:district_detail' district.id 'diputados' %}">
+                    Ver detalle
+                  </a>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-sm table-striped mb-0">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">Lista</th>
+                        <th scope="col" class="text-center">Porcentaje</th>
+                        <th scope="col" class="text-center">Bancas</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for result in district.deputies.lists %}
+                        <tr>
+                          <td>
+                            <span class="font-weight-bold d-block">{{ result.name }}</span>
+                          </td>
+                          <td class="text-center align-middle">
+                            <span class="d-block h5 font-weight-bold mb-0">{{ result.percentage_display }}%</span>
+                          </td>
+                          <td class="text-center align-middle">
+                            <span class="badge badge-success badge-pill">{{ result.seats }}</span>
+                          </td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              {% else %}
+                <div class="p-3 text-muted text-center">Sin datos de escrutinio para diputados en este distrito.</div>
+              {% endif %}
+            {% endif %}
+
+            {% if show_senators %}
+              {% if district.senators.seats %}
+                {% if show_deputies %}
+                  <hr class="my-0" />
+                {% endif %}
+                <div class="px-3 pt-3 d-flex justify-content-between align-items-center">
+                  <h4 class="h6 text-uppercase text-muted mb-0">Cámara de Senadores</h4>
+                  <a class="btn btn-outline-primary btn-sm" href="{% url 'portal:district_detail' district.id 'senadores' %}">
+                    Ver detalle
+                  </a>
+                </div>
+                {% if district.senators.lists %}
+                  <div class="table-responsive">
+                    <table class="table table-sm table-striped mb-0">
+                      <thead class="thead-light">
+                        <tr>
+                          <th scope="col">Lista</th>
+                          <th scope="col" class="text-center">Porcentaje</th>
+                          <th scope="col" class="text-center">Bancas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for result in district.senators.lists %}
+                          <tr>
+                            <td>
+                              <span class="font-weight-bold d-block">{{ result.name }}</span>
+                            </td>
+                            <td class="text-center align-middle">
+                              <span class="d-block h5 font-weight-bold mb-0">{{ result.percentage_display }}%</span>
+                            </td>
+                            <td class="text-center align-middle">
+                              <span class="badge badge-success badge-pill">{{ result.seats }}</span>
+                            </td>
+                          </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                {% else %}
+                  <div class="p-3 text-muted text-center">Sin datos de escrutinio para senadores en este distrito.</div>
+                {% endif %}
+              {% else %}
+                <div class="p-3 text-muted text-center">Sin datos de escrutinio para senadores en este distrito.</div>
+              {% endif %}
+            {% endif %}
+          </div>
+        </div>
+      </section>
+    {% empty %}
+      <section class="col-12">
+        <div class="alert alert-warning">Todavía no hay distritos con resultados cargados.</div>
+      </section>
+    {% endfor %}
+  </div>
+{% endblock %}
+
+{% block extra_js %}
+  {{ block.super }}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".progress[data-progress]").forEach(function (wrapper) {
+        var value = Number(wrapper.getAttribute("data-progress") || 0);
+        var bar = wrapper.querySelector(".progress-bar");
+        if (!bar) {
+          return;
+        }
+        var boundedValue = Math.min(Math.max(value, 0), 100);
+        bar.style.width = boundedValue + "%";
+        bar.setAttribute("aria-valuenow", boundedValue.toString());
+      });
+    });
+  </script>
+{% endblock %}
