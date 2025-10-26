@@ -59,7 +59,7 @@
                   <div class="mb-3">
                     <div class="d-flex justify-content-between align-items-center mb-1">
                       <span class="font-weight-bold">{{ item.name }}</span>
-                      <span class="text-muted">{{ item.seats }} bancas</span>
+                      <span class="text-muted">{{ item.seats }} bancas ({{ item.share|floatformat:2 }}%)</span>
                     </div>
                     <div class="progress progress-sm" data-progress="{{ item.share|floatformat:1 }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
                       <div class="progress-bar bg-primary"></div>
@@ -244,7 +244,12 @@
               <tbody>
                 {% for status in district_statuses %}
                   <tr>
-                    <td class="align-middle">{{ status.name }}</td>
+                    <td class="align-middle">
+                      {{ status.name }}
+                      {% if status.weight_percentage is not None %}
+                        <div class="small text-muted">{{ status.weight_percentage|floatformat:2 }}% del padrón nacional</div>
+                      {% endif %}
+                    </td>
                     <td class="text-center align-middle">
                       {% if status.has_deputies %}
                         <span class="badge badge-success">Con datos</span>

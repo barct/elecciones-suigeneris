@@ -12,6 +12,7 @@ DISTRICT_OUTPUT_PATH = BASE_DIR / "elections" / "fixtures" / "districts.json"
 LIST_OUTPUT_PATH = BASE_DIR / "elections" / "fixtures" / "lists.json"
 DEPUTIES_CSV_PATH = BASE_DIR / "docs" / "diputados 2025.csv"
 SENATORS_CSV_PATH = BASE_DIR / "docs" / "senadores 2025.csv"
+ELECTORS_CSV_PATH = BASE_DIR / "docs" / "electores.csv"
 
 DISTRICT_NAME_MAP = {
     "BUENOS AIRES": "Buenos Aires",
@@ -158,9 +159,26 @@ def load_senator_metrics() -> dict[str, tuple[int, int]]:
     return metrics
 
 
+def load_elector_counts() -> dict[str, int]:
+    path = ELECTORS_CSV_PATH
+    if not path.exists():
+        raise FileNotFoundError(f"Missing electors CSV at {path}")
+    counts: dict[str, int] = {}
+    with path.open("r", encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            district_label = pick_value(row, "provincia", "Provincia")
+            internal_name = normalise_label(district_label)
+            counts[internal_name] = parse_int(row.get("electoresHabilitados") or row.get("Electores"))
+    if not counts:
+        raise RuntimeError(f"No elector data found in {path}")
+    return counts
+
+
 def build_district_fixture(records: list[tuple[str, dict[str, str]]]) -> tuple[dict[str, int], list[dict]]:
     deputy_data = load_deputy_metrics()
     senator_data = load_senator_metrics()
+    elector_counts = load_elector_counts()
 
     referenced_districts = {name for name, _ in records}
     combined_names = sorted(set(deputy_data) | set(senator_data) | referenced_districts)
@@ -171,6 +189,7 @@ def build_district_fixture(records: list[tuple[str, dict[str, str]]]) -> tuple[d
     for index, district_name in enumerate(combined_names, start=1):
         dep_renewal, dep_total, voters = deputy_data.get(district_name, (0, 0, 0))
         sen_renewal, sen_total = senator_data.get(district_name, (0, 0))
+        voters = elector_counts.get(district_name, voters)
         mapping[district_name] = index
         fixture.append(
             {

@@ -6,7 +6,7 @@
       "name": "Buenos Aires",
       "renewal_seats": 35,
       "total_deputies": 70,
-      "registered_voters": 0,
+      "registered_voters": 13353974,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -18,7 +18,7 @@
       "name": "Catamarca",
       "renewal_seats": 3,
       "total_deputies": 5,
-      "registered_voters": 0,
+      "registered_voters": 347282,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -30,7 +30,7 @@
       "name": "Chaco",
       "renewal_seats": 4,
       "total_deputies": 7,
-      "registered_voters": 0,
+      "registered_voters": 1015693,
       "senator_renewal_seats": 3,
       "total_senators": 3
     }
@@ -42,7 +42,7 @@
       "name": "Chubut",
       "renewal_seats": 2,
       "total_deputies": 5,
-      "registered_voters": 0,
+      "registered_voters": 453021,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -54,7 +54,7 @@
       "name": "Ciudad Autónoma de Buenos Aires",
       "renewal_seats": 13,
       "total_deputies": 25,
-      "registered_voters": 0,
+      "registered_voters": 2520249,
       "senator_renewal_seats": 3,
       "total_senators": 3
     }
@@ -66,7 +66,7 @@
       "name": "Corrientes",
       "renewal_seats": 3,
       "total_deputies": 7,
-      "registered_voters": 0,
+      "registered_voters": 950576,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -78,7 +78,7 @@
       "name": "Córdoba",
       "renewal_seats": 9,
       "total_deputies": 18,
-      "registered_voters": 0,
+      "registered_voters": 3084000,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -90,7 +90,7 @@
       "name": "Entre Ríos",
       "renewal_seats": 5,
       "total_deputies": 9,
-      "registered_voters": 0,
+      "registered_voters": 1053652,
       "senator_renewal_seats": 3,
       "total_senators": 3
     }
@@ -102,7 +102,7 @@
       "name": "Formosa",
       "renewal_seats": 2,
       "total_deputies": 5,
-      "registered_voters": 0,
+      "registered_voters": 491565,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -114,7 +114,7 @@
       "name": "Jujuy",
       "renewal_seats": 3,
       "total_deputies": 6,
-      "registered_voters": 0,
+      "registered_voters": 602380,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -126,7 +126,7 @@
       "name": "La Pampa",
       "renewal_seats": 3,
       "total_deputies": 5,
-      "registered_voters": 0,
+      "registered_voters": 304693,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -138,7 +138,7 @@
       "name": "La Rioja",
       "renewal_seats": 2,
       "total_deputies": 5,
-      "registered_voters": 0,
+      "registered_voters": 309186,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -150,7 +150,7 @@
       "name": "Mendoza",
       "renewal_seats": 5,
       "total_deputies": 10,
-      "registered_voters": 0,
+      "registered_voters": 1525824,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -162,7 +162,7 @@
       "name": "Misiones",
       "renewal_seats": 3,
       "total_deputies": 7,
-      "registered_voters": 0,
+      "registered_voters": 994317,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -174,7 +174,7 @@
       "name": "Neuquén",
       "renewal_seats": 3,
       "total_deputies": 5,
-      "registered_voters": 0,
+      "registered_voters": 609951,
       "senator_renewal_seats": 3,
       "total_senators": 3
     }
@@ -186,7 +186,7 @@
       "name": "Río Negro",
       "renewal_seats": 2,
       "total_deputies": 5,
-      "registered_voters": 0,
+      "registered_voters": 617054,
       "senator_renewal_seats": 3,
       "total_senators": 3
     }
@@ -198,7 +198,7 @@
       "name": "Salta",
       "renewal_seats": 3,
       "total_deputies": 7,
-      "registered_voters": 0,
+      "registered_voters": 1111029,
       "senator_renewal_seats": 3,
       "total_senators": 3
     }
@@ -210,7 +210,7 @@
       "name": "San Juan",
       "renewal_seats": 3,
       "total_deputies": 6,
-      "registered_voters": 0,
+      "registered_voters": 606278,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -222,7 +222,7 @@
       "name": "San Luis",
       "renewal_seats": 3,
       "total_deputies": 5,
-      "registered_voters": 0,
+      "registered_voters": 399321,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -234,7 +234,7 @@
       "name": "Santa Cruz",
       "renewal_seats": 3,
       "total_deputies": 5,
-      "registered_voters": 0,
+      "registered_voters": 288732,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -246,7 +246,7 @@
       "name": "Santa Fe",
       "renewal_seats": 9,
       "total_deputies": 19,
-      "registered_voters": 0,
+      "registered_voters": 2815453,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }
@@ -258,7 +258,7 @@
       "name": "Santiago del Estero",
       "renewal_seats": 3,
       "total_deputies": 7,
-      "registered_voters": 0,
+      "registered_voters": 813327,
       "senator_renewal_seats": 3,
       "total_senators": 3
     }
@@ -270,7 +270,7 @@
       "name": "Tierra del Fuego",
       "renewal_seats": 2,
       "total_deputies": 5,
-      "registered_voters": 0,
+      "registered_voters": 162527,
       "senator_renewal_seats": 3,
       "total_senators": 3
     }
@@ -282,7 +282,7 @@
       "name": "Tucumán",
       "renewal_seats": 4,
       "total_deputies": 9,
-      "registered_voters": 0,
+      "registered_voters": 1341563,
       "senator_renewal_seats": 0,
       "total_senators": 3
     }

@@ -370,3 +370,80 @@ class DashboardViewTests(TestCase):
 		seats_by_alignment = {entry["name"]: entry["seats"] for entry in deputies_distribution["items"]}
 		self.assertEqual(seats_by_alignment["Alianza Federal"], 4)
 		self.assertGreaterEqual(seats_by_alignment["Provincias Unidas"], 1)
+
+	def test_overall_distribution_uses_weighted_percentages(self):
+		District.objects.all().delete()
+
+		major_district = District.objects.create(
+			name="Distrito Mayoritario",
+			renewal_seats=5,
+			total_deputies=10,
+			registered_voters=90000,
+		)
+		minor_district = District.objects.create(
+			name="Distrito Minoritario",
+			renewal_seats=5,
+			total_deputies=10,
+			registered_voters=10000,
+		)
+
+		major_a = List.objects.create(
+			district=major_district,
+			chamber=List.Chamber.DEPUTIES,
+			order=1,
+			code="MA",
+			name="Coalición A Norte",
+			national_alignment="Coalición A",
+		)
+		major_b = List.objects.create(
+			district=major_district,
+			chamber=List.Chamber.DEPUTIES,
+			order=2,
+			code="MB",
+			name="Coalición B Norte",
+			national_alignment="Coalición B",
+		)
+		minor_a = List.objects.create(
+			district=minor_district,
+			chamber=List.Chamber.DEPUTIES,
+			order=1,
+			code="mA",
+			name="Coalición A Sur",
+			national_alignment="Coalición A",
+		)
+		minor_b = List.objects.create(
+			district=minor_district,
+			chamber=List.Chamber.DEPUTIES,
+			order=2,
+			code="mB",
+			name="Coalición B Sur",
+			national_alignment="Coalición B",
+		)
+
+		Scrutiny.objects.create(election_list=major_a, percentage=Decimal("60.00"))
+		Scrutiny.objects.create(election_list=major_b, percentage=Decimal("40.00"))
+		Scrutiny.objects.create(election_list=minor_a, percentage=Decimal("30.00"))
+		Scrutiny.objects.create(election_list=minor_b, percentage=Decimal("70.00"))
+
+		response = self.client.get(reverse("portal:dashboard"))
+		self.assertEqual(response.status_code, 200)
+
+		overall_distributions = response.context["overall_distributions"]
+		deputies_distribution = next(
+			item for item in overall_distributions if item["label"] == "Diputados"
+		)
+		shares_by_alignment = {
+			entry["name"]: entry["share"] for entry in deputies_distribution["items"]
+		}
+		self.assertEqual(shares_by_alignment["Coalición A"].quantize(Decimal("0.01")), Decimal("57.00"))
+		self.assertEqual(shares_by_alignment["Coalición B"].quantize(Decimal("0.01")), Decimal("43.00"))
+
+		status_map = {entry["name"]: entry for entry in response.context["district_statuses"]}
+		self.assertEqual(
+			status_map["Distrito Mayoritario"]["weight_percentage"].quantize(Decimal("0.01")),
+			Decimal("90.00"),
+		)
+		self.assertEqual(
+			status_map["Distrito Minoritario"]["weight_percentage"].quantize(Decimal("0.01")),
+			Decimal("10.00"),
+		)

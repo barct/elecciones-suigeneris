@@ -133,6 +133,15 @@ def dashboard(request):
 		List.Chamber.DEPUTIES: defaultdict(int),
 		List.Chamber.SENATORS: defaultdict(int),
 	}
+	overall_weighted_votes = {
+		List.Chamber.DEPUTIES: defaultdict(Decimal),
+		List.Chamber.SENATORS: defaultdict(Decimal),
+	}
+	elector_totals = {
+		List.Chamber.DEPUTIES: Decimal("0"),
+		List.Chamber.SENATORS: Decimal("0"),
+	}
+	overall_registered_total = Decimal("0")
 	total_deputy_seats = 0
 	total_senate_seats = 0
 	total_lists_by_chamber = {
@@ -159,6 +168,9 @@ def dashboard(request):
 		deputy_minor_total = Decimal("0")
 		deputy_minor_latest_update = None
 		district_latest_update = None
+		voter_base = Decimal(district.registered_voters or 0)
+		if voter_base > 0:
+			overall_registered_total += voter_base
 
 		for election_list in district.lists.all():
 			scrutiny = next(iter(election_list.scrutiny_records.all()), None)
@@ -233,6 +245,15 @@ def dashboard(request):
 		if has_deputy_data:
 			total_deputy_seats += deputy_data["seats"]
 			total_lists_by_chamber[List.Chamber.DEPUTIES] += len(deputy_data["lists"])
+		if has_deputy_data and voter_base > 0:
+			elector_totals[List.Chamber.DEPUTIES] += voter_base
+			for entry in deputy_data["lists"]:
+				percentage = entry.get("percentage")
+				if percentage is None:
+					continue
+				if not isinstance(percentage, Decimal):
+					percentage = Decimal(str(percentage))
+				overall_weighted_votes[List.Chamber.DEPUTIES][entry["alignment"]] += percentage * voter_base
 
 		senate_data = chamber_payload[List.Chamber.SENATORS]
 		senate_allocation = _senate_allocation(senate_data["votes"], senate_data["seats"])
@@ -252,6 +273,15 @@ def dashboard(request):
 			if senate_data["seats"]:
 				total_senate_seats += senate_data["seats"]
 		total_lists_by_chamber[List.Chamber.SENATORS] += len(senate_data["lists"])
+		if has_senate_data and voter_base > 0:
+			elector_totals[List.Chamber.SENATORS] += voter_base
+			for entry in senate_data["lists"]:
+				percentage = entry.get("percentage")
+				if percentage is None:
+					continue
+				if not isinstance(percentage, Decimal):
+					percentage = Decimal(str(percentage))
+				overall_weighted_votes[List.Chamber.SENATORS][entry["alignment"]] += percentage * voter_base
 
 		district_statuses.append(
 			{
@@ -261,6 +291,7 @@ def dashboard(request):
 				"has_senators": has_senate_data,
 				"deputy_seats": district.renewal_seats,
 				"senator_seats": district.senator_renewal_seats,
+				"voter_base": voter_base,
 			}
 		)
 
@@ -295,20 +326,48 @@ def dashboard(request):
 	total_districts = len(districts_data)
 
 	overall_distribution_deputies = []
-	deputy_seats_total = sum(overall_totals[List.Chamber.DEPUTIES].values())
-	for alignment, seats in sorted(
-		overall_totals[List.Chamber.DEPUTIES].items(), key=lambda item: (-item[1], item[0])
+	deputy_denominator = elector_totals[List.Chamber.DEPUTIES]
+	deputy_alignments = set(overall_totals[List.Chamber.DEPUTIES].keys()) | set(
+		overall_weighted_votes[List.Chamber.DEPUTIES].keys()
+	)
+	for alignment in sorted(
+		deputy_alignments,
+		key=lambda name: (
+			-overall_totals[List.Chamber.DEPUTIES].get(name, 0),
+			-overall_weighted_votes[List.Chamber.DEPUTIES].get(name, Decimal("0")),
+			name,
+		),
 	):
-		share = (seats / deputy_seats_total) * 100 if deputy_seats_total else 0
+		seats = overall_totals[List.Chamber.DEPUTIES].get(alignment, 0)
+		weighted_votes = overall_weighted_votes[List.Chamber.DEPUTIES].get(alignment, Decimal("0"))
+		share = weighted_votes / deputy_denominator if deputy_denominator else Decimal("0")
 		overall_distribution_deputies.append({"name": alignment, "seats": seats, "share": share})
 
 	overall_distribution_senators = []
-	senate_seats_total = sum(overall_totals[List.Chamber.SENATORS].values())
-	for alignment, seats in sorted(
-		overall_totals[List.Chamber.SENATORS].items(), key=lambda item: (-item[1], item[0])
+	senate_denominator = elector_totals[List.Chamber.SENATORS]
+	senate_alignments = set(overall_totals[List.Chamber.SENATORS].keys()) | set(
+		overall_weighted_votes[List.Chamber.SENATORS].keys()
+	)
+	for alignment in sorted(
+		senate_alignments,
+		key=lambda name: (
+			-overall_totals[List.Chamber.SENATORS].get(name, 0),
+			-overall_weighted_votes[List.Chamber.SENATORS].get(name, Decimal("0")),
+			name,
+		),
 	):
-		share = (seats / senate_seats_total) * 100 if senate_seats_total else 0
+		seats = overall_totals[List.Chamber.SENATORS].get(alignment, 0)
+		weighted_votes = overall_weighted_votes[List.Chamber.SENATORS].get(alignment, Decimal("0"))
+		share = weighted_votes / senate_denominator if senate_denominator else Decimal("0")
 		overall_distribution_senators.append({"name": alignment, "seats": seats, "share": share})
+
+	for status in district_statuses:
+		voter_base = status.pop("voter_base", Decimal("0"))
+		status["weight_percentage"] = None
+		if voter_base > 0 and overall_registered_total > 0:
+			status["weight_percentage"] = (
+				voter_base / overall_registered_total
+			) * TOTAL_PERCENTAGE
 
 	overall_distributions = []
 	if include_deputies:
