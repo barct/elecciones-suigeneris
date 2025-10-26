@@ -44,11 +44,19 @@ else
 fi
 
 if [[ ! -x "${VENV_PATH}/bin/pip" ]]; then
-  echo "ERROR: pip not found inside ${VENV_PATH}. The virtualenv creation may have failed." >&2
-  exit 1
+  echo "pip not found inside ${VENV_PATH}; recreating virtual environment..."
+  rm -rf "${VENV_PATH}"
+  if ! ${PYTHON_BIN} -m venv "${VENV_PATH}"; then
+    echo "ERROR: Could not recreate virtual environment. Check python3-venv installation." >&2
+    exit 1
+  fi
 fi
 
 echo "Installing Python dependencies..."
+if [[ ! -x "${VENV_PATH}/bin/pip" ]]; then
+  echo "ERROR: pip still missing inside ${VENV_PATH}." >&2
+  exit 1
+fi
 "${VENV_PATH}/bin/pip" install --upgrade pip
 "${VENV_PATH}/bin/pip" install -r "${PROJECT_ROOT}/requirements.txt"
 
