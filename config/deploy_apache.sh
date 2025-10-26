@@ -35,7 +35,17 @@ fi
 # Create or update the Python virtual environment.
 if [[ ! -d "${VENV_PATH}" ]]; then
   echo "Creating virtual environment at ${VENV_PATH}..."
-  ${PYTHON_BIN} -m venv "${VENV_PATH}"
+  if ! ${PYTHON_BIN} -m venv "${VENV_PATH}"; then
+    echo "ERROR: Could not create virtual environment. Install 'python3-venv' and retry." >&2
+    exit 1
+  fi
+else
+  echo "Virtual environment already exists at ${VENV_PATH}."
+fi
+
+if [[ ! -x "${VENV_PATH}/bin/pip" ]]; then
+  echo "ERROR: pip not found inside ${VENV_PATH}. The virtualenv creation may have failed." >&2
+  exit 1
 fi
 
 echo "Installing Python dependencies..."
