@@ -65,6 +65,16 @@ fi
 echo "Applying database migrations..."
 "${VENV_PATH}/bin/python" "${PROJECT_ROOT}/manage.py" migrate --noinput
 
+# Load baseline fixtures so the site has core reference data.
+echo "Loading base fixtures..."
+"${VENV_PATH}/bin/python" "${PROJECT_ROOT}/manage.py" loaddata \
+  "${PROJECT_ROOT}/elections/fixtures/districts.json" \
+  "${PROJECT_ROOT}/elections/fixtures/lists.json"
+
+# Ensure the requested admin account exists for operational access.
+echo "Ensuring admin superuser exists..."
+"${VENV_PATH}/bin/python" "${PROJECT_ROOT}/manage.py" shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.filter(username='admin').exists() or User.objects.create_superuser('admin', 'hidalgofernandojavierqgmail.com', 'mameluco')"
+
 # Collect static files so Apache can serve them.
 echo "Collecting static assets..."
 mkdir -p "${DJANGO_STATIC_ROOT}"
