@@ -942,7 +942,7 @@
       "district": 7,
       "chamber": "diputados",
       "order": 15,
-      "code": "504",
+      "code": "504-ALT01",
       "name": "FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES - UNIDAD",
       "national_alignment": "FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES - UNIDAD"
     }
@@ -2214,7 +2214,7 @@
       "district": 21,
       "chamber": "diputados",
       "order": 5,
-      "code": "77",
+      "code": "77-ALT01",
       "name": "Partido Fe",
       "national_alignment": "Partido FE"
     }
