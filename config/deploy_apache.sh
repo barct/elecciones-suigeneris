@@ -21,6 +21,15 @@ else
   exit 1
 fi
 
+# Make sure mod_wsgi is available/enabled before installing the vhost.
+if ! apache2ctl -M 2>/dev/null | grep -q "wsgi_module"; then
+  echo "Enabling Apache mod_wsgi module..."
+  if ! a2enmod wsgi >/dev/null; then
+    echo "ERROR: Could not enable mod_wsgi. Install 'libapache2-mod-wsgi-py3' and retry." >&2
+    exit 1
+  fi
+fi
+
 install_file() {
   local source_file="$1"
   local destination="$2"
