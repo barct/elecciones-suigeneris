@@ -203,6 +203,9 @@ def build_list_fixture(records: list[tuple[str, dict[str, str]]], district_ids: 
 
     fixture: list[dict] = []
     pk_counter = 1
+    used_codes: dict[str, set[str]] = defaultdict(set)
+    duplicate_counters: dict[str, int] = defaultdict(int)
+    recorded_details: dict[str, dict[str, tuple[str, str]]] = defaultdict(dict)
 
     for district_name in sorted(grouped.keys()):
         rows = grouped[district_name]
@@ -221,6 +224,24 @@ def build_list_fixture(records: list[tuple[str, dict[str, str]]], district_ids: 
             code = normalise_code(raw_code, missing_codes, district_name)
             name = pick_value(row, "agrupacion", "Agrupación")
             alignment = pick_value(row, "agrupacionNacional", "Agrupación nacional (filo)")
+
+            existing_details = recorded_details[district_name].get(code)
+            if existing_details:
+                if existing_details == (name, alignment):
+                    # Duplicate row already captured; skip to avoid uniqueness clash.
+                    continue
+                duplicate_counters[district_name] += 1
+                suffix = duplicate_counters[district_name]
+                base_code = code or f"SC{missing_codes[district_name]:02d}"
+                candidate = f"{base_code}-ALT{suffix:02d}"
+                while candidate in used_codes[district_name]:
+                    duplicate_counters[district_name] += 1
+                    suffix = duplicate_counters[district_name]
+                    candidate = f"{base_code}-ALT{suffix:02d}"
+                code = candidate
+
+            used_codes[district_name].add(code)
+            recorded_details[district_name][code] = (name, alignment)
 
             fixture.append(
                 {
