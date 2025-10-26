@@ -10,6 +10,7 @@ VENV_PATH="${PROJECT_ROOT}/.venv"
 PYTHON_BIN="python3"
 APACHE_SITES_AVAILABLE="/etc/apache2/sites-available"
 APACHE_CONF_AVAILABLE="/etc/apache2/conf-available"
+export DJANGO_STATIC_ROOT="${PROJECT_ROOT}/staticfiles"
 
 # Ensure the source tree is present and up to date before touching Apache.
 if [[ ! -d "${PROJECT_ROOT}" ]]; then
@@ -62,6 +63,7 @@ fi
 
 # Collect static files so Apache can serve them.
 echo "Collecting static assets..."
+mkdir -p "${DJANGO_STATIC_ROOT}"
 "${VENV_PATH}/bin/python" "${PROJECT_ROOT}/manage.py" collectstatic --noinput
 
 install_file() {
