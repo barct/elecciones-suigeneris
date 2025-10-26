@@ -6,6 +6,8 @@ set -euo pipefail
 SITE_NAME="legis_site"
 PROJECT_ROOT="/var/www/elecciones-suigeneris"
 REPO_URL="git@github.com:barct/elecciones-suigeneris.git"
+VENV_PATH="${PROJECT_ROOT}/.venv"
+PYTHON_BIN="python3"
 APACHE_SITES_AVAILABLE="/etc/apache2/sites-available"
 APACHE_CONF_AVAILABLE="/etc/apache2/conf-available"
 
@@ -29,6 +31,20 @@ if ! apache2ctl -M 2>/dev/null | grep -q "wsgi_module"; then
     exit 1
   fi
 fi
+
+# Create or update the Python virtual environment.
+if [[ ! -d "${VENV_PATH}" ]]; then
+  echo "Creating virtual environment at ${VENV_PATH}..."
+  ${PYTHON_BIN} -m venv "${VENV_PATH}"
+fi
+
+echo "Installing Python dependencies..."
+"${VENV_PATH}/bin/pip" install --upgrade pip
+"${VENV_PATH}/bin/pip" install -r "${PROJECT_ROOT}/requirements.txt"
+
+# Collect static files so Apache can serve them.
+echo "Collecting static assets..."
+"${VENV_PATH}/bin/python" "${PROJECT_ROOT}/manage.py" collectstatic --noinput
 
 install_file() {
   local source_file="$1"
