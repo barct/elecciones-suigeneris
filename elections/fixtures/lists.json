@@ -7,8 +7,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "47",
-      "name": "COALICIÓN CÍVICA A.R.I.",
-      "national_alignment": "Otro/Local"
+      "name": "Coalición Cívica A.r.i.",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -19,8 +19,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "95",
-      "name": "FRENTE PATRIOTA FEDERAL",
-      "national_alignment": "Otro/Local"
+      "name": "Frente Patriota Federal",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -31,8 +31,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "153",
-      "name": "UNIÓN LIBERAL",
-      "national_alignment": "Otro/Local"
+      "name": "Unión Liberal",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -43,8 +43,8 @@
       "chamber": "diputados",
       "order": 4,
       "code": "221",
-      "name": "PARTIDO NUEVO BUENOS AIRES",
-      "national_alignment": "Otro/Local"
+      "name": "Partido Nuevo Buenos Aires",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -55,8 +55,8 @@
       "chamber": "diputados",
       "order": 5,
       "code": "276",
-      "name": "MOVIMIENTO AVANZADA SOCIALISTA",
-      "national_alignment": "Otro/Local"
+      "name": "Movimiento Avanzada Socialista",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -67,8 +67,8 @@
       "chamber": "diputados",
       "order": 6,
       "code": "299",
-      "name": "PROPUESTA FEDERAL PARA EL CAMBIO",
-      "national_alignment": "Otro/Local"
+      "name": "Propuesta Federal Para El Cambio",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -79,8 +79,8 @@
       "chamber": "diputados",
       "order": 7,
       "code": "305",
-      "name": "MOV. POL. SOC. Y CULTURAL PROYECTO SUR",
-      "national_alignment": "Otro/Local"
+      "name": "Mov. Pol. Soc. Y Cultural Proyecto Sur",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -91,8 +91,8 @@
       "chamber": "diputados",
       "order": 8,
       "code": "318",
-      "name": "LIBER.AR",
-      "national_alignment": "Otro/Local"
+      "name": "Liber.ar",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -103,8 +103,8 @@
       "chamber": "diputados",
       "order": 9,
       "code": "501",
-      "name": "ALIANZA UNIÓN FEDERAL",
-      "national_alignment": "UNIÓN FEDERAL"
+      "name": "Alianza Unión Federal",
+      "national_alignment": "Unión Federal"
     }
   },
   {
@@ -115,8 +115,8 @@
       "chamber": "diputados",
       "order": 10,
       "code": "502",
-      "name": "ALIANZA NUEVOS AIRES",
-      "national_alignment": "Otro/Local"
+      "name": "Alianza Nuevos Aires",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -127,8 +127,8 @@
       "chamber": "diputados",
       "order": 11,
       "code": "503",
-      "name": "ALIANZA LA LIBERTAD AVANZA",
-      "national_alignment": "LA LIBERTAD AVANZA"
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
     }
   },
   {
@@ -139,8 +139,8 @@
       "chamber": "diputados",
       "order": 12,
       "code": "504",
-      "name": "ALIANZA POTENCIA",
-      "national_alignment": "POTENCIA"
+      "name": "Alianza Potencia",
+      "national_alignment": "Potencia"
     }
   },
   {
@@ -151,8 +151,8 @@
       "chamber": "diputados",
       "order": 13,
       "code": "506",
-      "name": "FRENTE DE IZQUIERDA - UNIDAD -",
-      "national_alignment": "FRENTE DE IZQUIERDA"
+      "name": "Frente De Izquierda - Unidad -",
+      "national_alignment": "Frente De Izquierda"
     }
   },
   {
@@ -163,8 +163,8 @@
       "chamber": "diputados",
       "order": 14,
       "code": "507",
-      "name": "ALIANZA FUERZA PATRIA",
-      "national_alignment": "FUERZA PATRIA"
+      "name": "Alianza Fuerza Patria",
+      "national_alignment": "Fuerza Patria"
     }
   },
   {
@@ -175,8 +175,8 @@
       "chamber": "diputados",
       "order": 15,
       "code": "508",
-      "name": "ALIANZA PROVINCIAS UNIDAS",
-      "national_alignment": "PROVINCIAS UNIDAS"
+      "name": "Alianza Provincias Unidas",
+      "national_alignment": "Provincias Unidas"
     }
   },
   {
@@ -187,8 +187,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "1",
-      "name": "Movimiento de Integración y Desarrollo – MID",
-      "national_alignment": "Otro/Local"
+      "name": "Movimiento De Integración Y Desarrollo – Mid",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -200,7 +200,7 @@
       "order": 2,
       "code": "92",
       "name": "Política Obrera",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -248,7 +248,7 @@
       "order": 6,
       "code": "503",
       "name": "Hacemos Renacer Catamarca",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -272,7 +272,7 @@
       "order": 8,
       "code": "505",
       "name": "Primero Catamarca",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -283,8 +283,8 @@
       "chamber": "diputados",
       "order": 9,
       "code": "506",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -295,8 +295,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "33",
-      "name": "UNIR",
-      "national_alignment": "UNIR"
+      "name": "Unir",
+      "national_alignment": "Unir"
     }
   },
   {
@@ -307,8 +307,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "71",
-      "name": "Partido del Obrero",
-      "national_alignment": "Otro/Local"
+      "name": "Partido Del Obrero",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -319,8 +319,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "175",
-      "name": "Partido Polo Social – Movimiento de Bases",
-      "national_alignment": "Otro/Local"
+      "name": "Partido Polo Social – Movimiento De Bases",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -331,8 +331,8 @@
       "chamber": "diputados",
       "order": 4,
       "code": "180",
-      "name": "Proyecto Sur (Nueva Etapa)",
-      "national_alignment": "Otro/Local"
+      "name": "Proyecto Sur (nueva Etapa)",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -343,8 +343,8 @@
       "chamber": "diputados",
       "order": 5,
       "code": "193",
-      "name": "NEPAR",
-      "national_alignment": "Otro/Local"
+      "name": "Nepar",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -356,7 +356,7 @@
       "order": 6,
       "code": "201",
       "name": "Frente Integrador",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -368,7 +368,7 @@
       "order": 7,
       "code": "202",
       "name": "Partido Dignidad Popular",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -392,7 +392,7 @@
       "order": 9,
       "code": "502",
       "name": "Vamos Chaco",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -415,8 +415,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "69",
-      "name": "GEN",
-      "national_alignment": "GEN"
+      "name": "Gen",
+      "national_alignment": "Gen"
     }
   },
   {
@@ -439,8 +439,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "151",
-      "name": "Partido Independiente del Chubut",
-      "national_alignment": "Otro/Local"
+      "name": "Partido Independiente Del Chubut",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -463,8 +463,8 @@
       "chamber": "diputados",
       "order": 5,
       "code": "501",
-      "name": "La Fuerza del Trabajo Chubutense",
-      "national_alignment": "Otro/Local"
+      "name": "La Fuerza Del Trabajo Chubutense",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -476,7 +476,7 @@
       "order": 6,
       "code": "502",
       "name": "Despierta Chubut",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -487,8 +487,8 @@
       "chamber": "diputados",
       "order": 7,
       "code": "503",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -500,7 +500,7 @@
       "order": 8,
       "code": "504",
       "name": "Frente Unidos Podemos",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -511,8 +511,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "8",
-      "name": "PARTIDO FEDERAL",
-      "national_alignment": "NUEVOS AIRES"
+      "name": "Partido Federal",
+      "national_alignment": "Nuevos Aires"
     }
   },
   {
@@ -523,8 +523,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "20",
-      "name": "UNIÓN DEL CENTRO DEMOCRÁTICO",
-      "national_alignment": "UNIÓN DEL CENTRO DEMOCRÁTICO"
+      "name": "Unión Del Centro Democrático",
+      "national_alignment": "Unión Del Centro Democrático"
     }
   },
   {
@@ -535,8 +535,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "69",
-      "name": "GEN",
-      "national_alignment": "PROVINCIAS UNIDAS"
+      "name": "Gen",
+      "national_alignment": "Provincias Unidas"
     }
   },
   {
@@ -547,8 +547,8 @@
       "chamber": "diputados",
       "order": 4,
       "code": "72",
-      "name": "INSTRUMENTO ELECTORAL POR LA UNIDAD POPULAR",
-      "national_alignment": "FUERZA PATRIA"
+      "name": "Instrumento Electoral Por La Unidad Popular",
+      "national_alignment": "Fuerza Patria"
     }
   },
   {
@@ -559,8 +559,8 @@
       "chamber": "diputados",
       "order": 5,
       "code": "95",
-      "name": "FRENTE PATRIOTA FEDERAL",
-      "national_alignment": "FRENTE PATRIOTA FEDERAL"
+      "name": "Frente Patriota Federal",
+      "national_alignment": "Frente Patriota Federal"
     }
   },
   {
@@ -571,8 +571,8 @@
       "chamber": "diputados",
       "order": 6,
       "code": "184",
-      "name": "PARTIDO SOCIALISTA AUTÉNTICO",
-      "national_alignment": "PARTIDO SOCIALISTA AUTÉNTICO"
+      "name": "Partido Socialista Auténtico",
+      "national_alignment": "Partido Socialista Auténtico"
     }
   },
   {
@@ -583,8 +583,8 @@
       "chamber": "diputados",
       "order": 7,
       "code": "314",
-      "name": "PARTIDO COMUNISTA",
-      "national_alignment": "PARTIDO COMUNISTA"
+      "name": "Partido Comunista",
+      "national_alignment": "Partido Comunista"
     }
   },
   {
@@ -595,8 +595,8 @@
       "chamber": "diputados",
       "order": 8,
       "code": "343",
-      "name": "MOVIMIENTO DE JUBILADOS Y JUVENTUD",
-      "national_alignment": "MOVIMIENTO DE JUBILADOS Y JUVENTUD"
+      "name": "Movimiento De Jubilados Y Juventud",
+      "national_alignment": "Movimiento De Jubilados Y Juventud"
     }
   },
   {
@@ -607,8 +607,8 @@
       "chamber": "diputados",
       "order": 9,
       "code": "348",
-      "name": "INTEGRAR",
-      "national_alignment": "NUEVOS AIRES"
+      "name": "Integrar",
+      "national_alignment": "Nuevos Aires"
     }
   },
   {
@@ -619,8 +619,8 @@
       "chamber": "diputados",
       "order": 10,
       "code": "350",
-      "name": "LA IZQUIERDA EN LA CIUDAD",
-      "national_alignment": "MOVIMIENTO AL SOCIALISMO"
+      "name": "La Izquierda En La Ciudad",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -631,8 +631,8 @@
       "chamber": "diputados",
       "order": 11,
       "code": "352",
-      "name": "MOVIMIENTO PLURAL",
-      "national_alignment": "MOVIMIENTO PLURAL"
+      "name": "Movimiento Plural",
+      "national_alignment": "Movimiento Plural"
     }
   },
   {
@@ -643,8 +643,8 @@
       "chamber": "diputados",
       "order": 12,
       "code": "501",
-      "name": "ALIANZA LA LIBERTAD AVANZA",
-      "national_alignment": "LA LIBERTAD AVANZA"
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
     }
   },
   {
@@ -655,8 +655,8 @@
       "chamber": "diputados",
       "order": 13,
       "code": "502",
-      "name": "ALIANZA POTENCIA",
-      "national_alignment": "POTENCIA"
+      "name": "Alianza Potencia",
+      "national_alignment": "Potencia"
     }
   },
   {
@@ -667,8 +667,8 @@
       "chamber": "diputados",
       "order": 14,
       "code": "503",
-      "name": "FUERZA PATRIA",
-      "national_alignment": "FUERZA PATRIA"
+      "name": "Fuerza Patria",
+      "national_alignment": "Fuerza Patria"
     }
   },
   {
@@ -679,8 +679,8 @@
       "chamber": "diputados",
       "order": 15,
       "code": "504",
-      "name": "CIUDADANOS UNIDOS",
-      "national_alignment": "PROVINCIAS UNIDAS"
+      "name": "Ciudadanos Unidos",
+      "national_alignment": "Provincias Unidas"
     }
   },
   {
@@ -691,8 +691,8 @@
       "chamber": "diputados",
       "order": 16,
       "code": "505",
-      "name": "HAGAMOS FUTURO",
-      "national_alignment": "COALICIÓN CÍVICA ARI"
+      "name": "Hagamos Futuro",
+      "national_alignment": "Coalición Cívica Ari"
     }
   },
   {
@@ -703,8 +703,8 @@
       "chamber": "diputados",
       "order": 17,
       "code": "506",
-      "name": "FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD",
-      "national_alignment": "FRENTE DE IZQUIERDA"
+      "name": "Frente De Izquierda Y De Trabajadores - Unidad",
+      "national_alignment": "Frente De Izquierda"
     }
   },
   {
@@ -716,7 +716,7 @@
       "order": 1,
       "code": "225",
       "name": "Ahora",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -740,7 +740,7 @@
       "order": 3,
       "code": "502",
       "name": "Vamos Corrientes",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -752,7 +752,7 @@
       "order": 4,
       "code": "503",
       "name": "Corrientes Nos Une",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -775,8 +775,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "3",
-      "name": "UNION CIVICA RADICAL (UCR)",
-      "national_alignment": "UNION CIVICA RADICAL"
+      "name": "Union Civica Radical (ucr)",
+      "national_alignment": "Union Civica Radical"
     }
   },
   {
@@ -787,8 +787,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "64",
-      "name": "PRO - PROPUESTA REPUBLICANA",
-      "national_alignment": "PRO"
+      "name": "Pro - Propuesta Republicana",
+      "national_alignment": "Pro"
     }
   },
   {
@@ -799,8 +799,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "85",
-      "name": "PARTIDO DEMOCRATA",
-      "national_alignment": "PARTIDO DEMOCRATA"
+      "name": "Partido Democrata",
+      "national_alignment": "Partido Democrata"
     }
   },
   {
@@ -811,8 +811,8 @@
       "chamber": "diputados",
       "order": 4,
       "code": "169",
-      "name": "ACCION PARA EL CAMBIO",
-      "national_alignment": "ACCION PARA EL CAMBIO"
+      "name": "Accion Para El Cambio",
+      "national_alignment": "Accion Para El Cambio"
     }
   },
   {
@@ -823,8 +823,8 @@
       "chamber": "diputados",
       "order": 5,
       "code": "200",
-      "name": "PARTIDO LIBERTARIO",
-      "national_alignment": "PARTIDO LIBERTARIO"
+      "name": "Partido Libertario",
+      "national_alignment": "Partido Libertario"
     }
   },
   {
@@ -835,8 +835,8 @@
       "chamber": "diputados",
       "order": 6,
       "code": "216",
-      "name": "FRENTE FEDERAL DE ACCION SOLIDARIA",
-      "national_alignment": "FRENTE FEDERAL DE ACCION SOLIDARIA"
+      "name": "Frente Federal De Accion Solidaria",
+      "national_alignment": "Frente Federal De Accion Solidaria"
     }
   },
   {
@@ -847,8 +847,8 @@
       "chamber": "diputados",
       "order": 7,
       "code": "218",
-      "name": "UNION POPULAR FEDERAL",
-      "national_alignment": "UNION POPULAR FEDERAL"
+      "name": "Union Popular Federal",
+      "national_alignment": "Union Popular Federal"
     }
   },
   {
@@ -859,8 +859,8 @@
       "chamber": "diputados",
       "order": 8,
       "code": "231",
-      "name": "POLITICA ABIERTA PARA LA INTEGRIDAD SOCIAL (PAIS)",
-      "national_alignment": "POLITICA ABIERTA PARA LA INTEGRIDAD SOCIAL"
+      "name": "Politica Abierta Para La Integridad Social (pais)",
+      "national_alignment": "Politica Abierta Para La Integridad Social"
     }
   },
   {
@@ -871,8 +871,8 @@
       "chamber": "diputados",
       "order": 9,
       "code": "233",
-      "name": "PARTIDO FE",
-      "national_alignment": "PARTIDO FE"
+      "name": "Partido Fe",
+      "national_alignment": "Partido Fe"
     }
   },
   {
@@ -883,8 +883,8 @@
       "chamber": "diputados",
       "order": 10,
       "code": "238",
-      "name": "MOVIMIENTO AVANZADA SOCIALISTA",
-      "national_alignment": "MOVIMIENTO AVANZADA SOCIALISTA"
+      "name": "Movimiento Avanzada Socialista",
+      "national_alignment": "Movimiento Avanzada Socialista"
     }
   },
   {
@@ -895,8 +895,8 @@
       "chamber": "diputados",
       "order": 11,
       "code": "501",
-      "name": "DEFENDAMOS CORDOBA",
-      "national_alignment": "DEFENDAMOS CORDOBA"
+      "name": "Defendamos Cordoba",
+      "national_alignment": "Defendamos Cordoba"
     }
   },
   {
@@ -907,8 +907,8 @@
       "chamber": "diputados",
       "order": 12,
       "code": "502",
-      "name": "ALIANZA CIUDADANOS",
-      "national_alignment": "CIUDADANOS"
+      "name": "Alianza Ciudadanos",
+      "national_alignment": "Ciudadanos"
     }
   },
   {
@@ -919,8 +919,8 @@
       "chamber": "diputados",
       "order": 13,
       "code": "503",
-      "name": "ALIANZA CORDOBA TE QUIERO",
-      "national_alignment": "CORDOBA TE QUIERO"
+      "name": "Alianza Cordoba Te Quiero",
+      "national_alignment": "Cordoba Te Quiero"
     }
   },
   {
@@ -931,8 +931,8 @@
       "chamber": "diputados",
       "order": 14,
       "code": "504",
-      "name": "ALIANZA LA LIBERTAD AVANZA",
-      "national_alignment": "LA LIBERTAD AVANZA"
+      "name": "Alianza La Libertad Avanza",
+      "national_alignment": "La Libertad Avanza"
     }
   },
   {
@@ -943,8 +943,8 @@
       "chamber": "diputados",
       "order": 15,
       "code": "504-ALT01",
-      "name": "FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES - UNIDAD",
-      "national_alignment": "FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES - UNIDAD"
+      "name": "Frente De Izquierda Y De Los Trabajadores - Unidad",
+      "national_alignment": "Frente De Izquierda Y De Los Trabajadores - Unidad"
     }
   },
   {
@@ -955,8 +955,8 @@
       "chamber": "diputados",
       "order": 16,
       "code": "505",
-      "name": "ALIANZA ENCUENTRO POR LA REPUBLICA",
-      "national_alignment": "ENCUENTRO POR LA REPUBLICA"
+      "name": "Alianza Encuentro Por La Republica",
+      "national_alignment": "Encuentro Por La Republica"
     }
   },
   {
@@ -967,8 +967,8 @@
       "chamber": "diputados",
       "order": 17,
       "code": "506",
-      "name": "ALIANZA PROVINCIAS UNIDAS",
-      "national_alignment": "PROVINCIAS UNIDAS"
+      "name": "Alianza Provincias Unidas",
+      "national_alignment": "Provincias Unidas"
     }
   },
   {
@@ -979,8 +979,8 @@
       "chamber": "diputados",
       "order": 18,
       "code": "507",
-      "name": "ALIANZA FUERZA PATRIA",
-      "national_alignment": "FUERZA PATRIA"
+      "name": "Alianza Fuerza Patria",
+      "national_alignment": "Fuerza Patria"
     }
   },
   {
@@ -991,8 +991,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "13",
-      "name": "Movimiento al Socialismo (MAS)",
-      "national_alignment": "Movimiento al Socialismo"
+      "name": "Movimiento Al Socialismo (mas)",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -1004,7 +1004,7 @@
       "order": 2,
       "code": "23",
       "name": "Unión Popular Federal",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1028,7 +1028,7 @@
       "order": 4,
       "code": "68",
       "name": "Nueva Izquierda",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1040,7 +1040,7 @@
       "order": 5,
       "code": "501",
       "name": "Fuerza Entre Ríos",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1064,7 +1064,7 @@
       "order": 7,
       "code": "503",
       "name": "Ahora 503",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1075,8 +1075,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "71",
-      "name": "Partido del Obrero",
-      "national_alignment": "Otro/Local"
+      "name": "Partido Del Obrero",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1087,8 +1087,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "501",
-      "name": "Frente de la Victoria",
-      "national_alignment": "Otro/Local"
+      "name": "Frente De La Victoria",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1099,8 +1099,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "502",
-      "name": "Juntos por la Libertad y la República",
-      "national_alignment": "Otro/Local"
+      "name": "Juntos Por La Libertad Y La República",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1111,8 +1111,8 @@
       "chamber": "diputados",
       "order": 4,
       "code": "503",
-      "name": "Principios y Convicción",
-      "national_alignment": "Principios y Convicción"
+      "name": "Principios Y Convicción",
+      "national_alignment": "Principios Y Convicción"
     }
   },
   {
@@ -1136,7 +1136,7 @@
       "order": 1,
       "code": "501",
       "name": "Frente Primero Jujuy Avanza",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1159,7 +1159,7 @@
       "chamber": "diputados",
       "order": 3,
       "code": "503",
-      "name": "Frente Jujuy Crece (Provincias Unidas)",
+      "name": "Frente Jujuy Crece (provincias Unidas)",
       "national_alignment": "Provincias Unidas"
     }
   },
@@ -1171,8 +1171,8 @@
       "chamber": "diputados",
       "order": 4,
       "code": "504",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -1184,7 +1184,7 @@
       "order": 5,
       "code": "505",
       "name": "Transformación Libertaria",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1208,7 +1208,7 @@
       "order": 7,
       "code": "507",
       "name": "Frente Liberal",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1219,8 +1219,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "13",
-      "name": "Movimiento al Socialismo (MAS)",
-      "national_alignment": "Movimiento al Socialismo"
+      "name": "Movimiento Al Socialismo (mas)",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -1243,8 +1243,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "502",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -1256,7 +1256,7 @@
       "order": 4,
       "code": "503",
       "name": "Frente Defendemos La Pampa",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1268,7 +1268,7 @@
       "order": 5,
       "code": "504",
       "name": "Cambia La Pampa",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1279,7 +1279,7 @@
       "chamber": "diputados",
       "order": 1,
       "code": "3",
-      "name": "Unión Cívica Radical (UCR)",
+      "name": "Unión Cívica Radical (ucr)",
       "national_alignment": "Unión Cívica Radical"
     }
   },
@@ -1316,7 +1316,7 @@
       "order": 4,
       "code": "501",
       "name": "Federales Defendamos La Rioja",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1327,8 +1327,8 @@
       "chamber": "diputados",
       "order": 5,
       "code": "502",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -1339,8 +1339,8 @@
       "chamber": "diputados",
       "order": 6,
       "code": "503",
-      "name": "Las Fuerzas del Centro",
-      "national_alignment": "Otro/Local"
+      "name": "Las Fuerzas Del Centro",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1363,8 +1363,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "13",
-      "name": "Movimiento al Socialismo (MAS)",
-      "national_alignment": "Movimiento al Socialismo"
+      "name": "Movimiento Al Socialismo (mas)",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -1376,7 +1376,7 @@
       "order": 2,
       "code": "222",
       "name": "Protectora Fuerza Política",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1388,7 +1388,7 @@
       "order": 3,
       "code": "501",
       "name": "Fuerza Justicialista Mendoza",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1400,7 +1400,7 @@
       "order": 4,
       "code": "502",
       "name": "Frente Verde",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1423,8 +1423,8 @@
       "chamber": "diputados",
       "order": 6,
       "code": "504",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -1448,7 +1448,7 @@
       "order": 8,
       "code": "506",
       "name": "Frente Libertario Demócrata",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1471,8 +1471,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "71",
-      "name": "Partido del Obrero",
-      "national_alignment": "Otro/Local"
+      "name": "Partido Del Obrero",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1483,8 +1483,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "75",
-      "name": "Partido de la Concertación Forja",
-      "national_alignment": "Otro/Local"
+      "name": "Partido De La Concertación Forja",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1496,7 +1496,7 @@
       "order": 4,
       "code": "77",
       "name": "Partido Fe",
-      "national_alignment": "Partido FE"
+      "national_alignment": "Partido Fe"
     }
   },
   {
@@ -1508,7 +1508,7 @@
       "order": 5,
       "code": "186",
       "name": "Activar",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1531,8 +1531,8 @@
       "chamber": "diputados",
       "order": 7,
       "code": "501",
-      "name": "Renovador de la Concordia NEO",
-      "national_alignment": "Otro/Local"
+      "name": "Renovador De La Concordia Neo",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1543,8 +1543,8 @@
       "chamber": "diputados",
       "order": 8,
       "code": "502",
-      "name": "Por la Vida y los Valores, por un Nuevo Octubre",
-      "national_alignment": "Otro/Local"
+      "name": "Por La Vida Y Los Valores, Por Un Nuevo Octubre",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1579,8 +1579,8 @@
       "chamber": "diputados",
       "order": 11,
       "code": "505",
-      "name": "Frente Popular Agrario y Social",
-      "national_alignment": "Otro/Local"
+      "name": "Frente Popular Agrario Y Social",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1591,8 +1591,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "13",
-      "name": "Movimiento al Socialismo (MAS)",
-      "national_alignment": "Movimiento al Socialismo"
+      "name": "Movimiento Al Socialismo (mas)",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -1603,8 +1603,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "72",
-      "name": "Instrumento Electoral por la Unidad Popular (Unidad Popular)",
-      "national_alignment": "Otro/Local"
+      "name": "Instrumento Electoral Por La Unidad Popular (unidad Popular)",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1628,7 +1628,7 @@
       "order": 4,
       "code": "190",
       "name": "Desarrollo Ciudadano",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1651,8 +1651,8 @@
       "chamber": "diputados",
       "order": 6,
       "code": "197",
-      "name": "Más por Neuquén",
-      "national_alignment": "Otro/Local"
+      "name": "Más Por Neuquén",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1664,7 +1664,7 @@
       "order": 7,
       "code": "501",
       "name": "La Neuquinidad",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1687,8 +1687,8 @@
       "chamber": "diputados",
       "order": 9,
       "code": "503",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -1699,8 +1699,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "13",
-      "name": "Movimiento al Socialismo – MAS",
-      "national_alignment": "Movimiento al Socialismo"
+      "name": "Movimiento Al Socialismo – Mas",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -1711,8 +1711,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "64",
-      "name": "PRO – Propuesta Republicana",
-      "national_alignment": "Propuesta Republicana (PRO)"
+      "name": "Pro – Propuesta Republicana",
+      "national_alignment": "Propuesta Republicana (pro)"
     }
   },
   {
@@ -1724,7 +1724,7 @@
       "order": 3,
       "code": "501",
       "name": "Juntos Defendemos Río Negro",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1735,8 +1735,8 @@
       "chamber": "diputados",
       "order": 4,
       "code": "502",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -1771,8 +1771,8 @@
       "chamber": "diputados",
       "order": 7,
       "code": "SC01",
-      "name": "Primero Río Negro (en la boleta no se ve código)",
-      "national_alignment": "Otro/Local"
+      "name": "Primero Río Negro (en La Boleta No Se Ve Código)",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1783,7 +1783,7 @@
       "chamber": "diputados",
       "order": 1,
       "code": "3",
-      "name": "Unión Cívica Radical (UCR)",
+      "name": "Unión Cívica Radical (ucr)",
       "national_alignment": "Unión Cívica Radical"
     }
   },
@@ -1795,8 +1795,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "13",
-      "name": "Movimiento al Socialismo (MAS)",
-      "national_alignment": "Movimiento al Socialismo"
+      "name": "Movimiento Al Socialismo (mas)",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -1807,8 +1807,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "54",
-      "name": "Partido de la Victoria",
-      "national_alignment": "Otro/Local"
+      "name": "Partido De La Victoria",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1820,7 +1820,7 @@
       "order": 4,
       "code": "92",
       "name": "Política Obrera",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1844,7 +1844,7 @@
       "order": 6,
       "code": "240",
       "name": "Partido Renacer",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1855,8 +1855,8 @@
       "chamber": "diputados",
       "order": 7,
       "code": "501",
-      "name": "Primero los Salteños",
-      "national_alignment": "Otro/Local"
+      "name": "Primero Los Salteños",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1867,8 +1867,8 @@
       "chamber": "diputados",
       "order": 8,
       "code": "502",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -1892,7 +1892,7 @@
       "order": 1,
       "code": "153",
       "name": "Cruzada Renovadora",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1915,8 +1915,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "194",
-      "name": "Ideas de la Libertad",
-      "national_alignment": "Otro/Local"
+      "name": "Ideas De La Libertad",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1940,7 +1940,7 @@
       "order": 5,
       "code": "197",
       "name": "Hacemos",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1952,7 +1952,7 @@
       "order": 6,
       "code": "198",
       "name": "Evolución Liberal",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1976,7 +1976,7 @@
       "order": 8,
       "code": "502",
       "name": "Por San Juan",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -1987,8 +1987,8 @@
       "chamber": "diputados",
       "order": 9,
       "code": "503",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -1999,8 +1999,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "13",
-      "name": "Movimiento al Socialismo (MAS)",
-      "national_alignment": "Movimiento al Socialismo"
+      "name": "Movimiento Al Socialismo (mas)",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -2012,7 +2012,7 @@
       "order": 2,
       "code": "501",
       "name": "Frente Pueblo",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2048,7 +2048,7 @@
       "order": 5,
       "code": "504",
       "name": "Frente Justicialista",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2059,8 +2059,8 @@
       "chamber": "diputados",
       "order": 6,
       "code": "506",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -2071,8 +2071,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "13",
-      "name": "Movimiento al Socialismo (MAS)",
-      "national_alignment": "Movimiento al Socialismo"
+      "name": "Movimiento Al Socialismo (mas)",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -2083,8 +2083,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "47",
-      "name": "Coalición Cívica ARI",
-      "national_alignment": "Coalición Cívica ARI"
+      "name": "Coalición Cívica Ari",
+      "national_alignment": "Coalición Cívica Ari"
     }
   },
   {
@@ -2095,8 +2095,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "64",
-      "name": "PRO – Propuesta Republicana",
-      "national_alignment": "Propuesta Republicana (PRO)"
+      "name": "Pro – Propuesta Republicana",
+      "national_alignment": "Propuesta Republicana (pro)"
     }
   },
   {
@@ -2120,7 +2120,7 @@
       "order": 5,
       "code": "180",
       "name": "Proyecto Alternativo",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2131,8 +2131,8 @@
       "chamber": "diputados",
       "order": 6,
       "code": "501",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -2144,7 +2144,7 @@
       "order": 7,
       "code": "502",
       "name": "Fuerza Santacruceña",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2156,7 +2156,7 @@
       "order": 8,
       "code": "503",
       "name": "Por Santa Cruz",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2167,8 +2167,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "13",
-      "name": "Movimiento al Socialismo (MAS)",
-      "national_alignment": "Movimiento al Socialismo"
+      "name": "Movimiento Al Socialismo (mas)",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -2191,8 +2191,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "47",
-      "name": "Coalición Cívica ARI",
-      "national_alignment": "Coalición Cívica ARI"
+      "name": "Coalición Cívica Ari",
+      "national_alignment": "Coalición Cívica Ari"
     }
   },
   {
@@ -2204,7 +2204,7 @@
       "order": 4,
       "code": "77",
       "name": "Movimiento Independiente Renovador",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2216,7 +2216,7 @@
       "order": 5,
       "code": "77-ALT01",
       "name": "Partido Fe",
-      "national_alignment": "Partido FE"
+      "national_alignment": "Partido Fe"
     }
   },
   {
@@ -2240,7 +2240,7 @@
       "order": 7,
       "code": "92",
       "name": "Política Obrera",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2263,8 +2263,8 @@
       "chamber": "diputados",
       "order": 9,
       "code": "213",
-      "name": "Igualdad y Participación",
-      "national_alignment": "Otro/Local"
+      "name": "Igualdad Y Participación",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2288,7 +2288,7 @@
       "order": 11,
       "code": "227",
       "name": "Nuevas Ideas",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2299,8 +2299,8 @@
       "chamber": "diputados",
       "order": 12,
       "code": "501",
-      "name": "Frente Amplio por la Soberanía",
-      "national_alignment": "Otro/Local"
+      "name": "Frente Amplio Por La Soberanía",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2311,8 +2311,8 @@
       "chamber": "diputados",
       "order": 13,
       "code": "502",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -2336,7 +2336,7 @@
       "order": 15,
       "code": "504",
       "name": "Defendamos Santa Fe",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2360,7 +2360,7 @@
       "order": 1,
       "code": "68",
       "name": "Nueva Izquierda",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2383,8 +2383,8 @@
       "chamber": "diputados",
       "order": 3,
       "code": "208",
-      "name": "Unite por la Libertad y la Dignidad",
-      "national_alignment": "Otro/Local"
+      "name": "Unite Por La Libertad Y La Dignidad",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2395,7 +2395,7 @@
       "chamber": "diputados",
       "order": 4,
       "code": "501",
-      "name": "Frente Cívico por Santiago",
+      "name": "Frente Cívico Por Santiago",
       "national_alignment": "Frente Cívico"
     }
   },
@@ -2420,7 +2420,7 @@
       "order": 6,
       "code": "503",
       "name": "Despierta Santiago",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2431,8 +2431,8 @@
       "chamber": "diputados",
       "order": 7,
       "code": "504",
-      "name": "Hacemos por Santiago",
-      "national_alignment": "Otro/Local"
+      "name": "Hacemos Por Santiago",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2443,8 +2443,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "13",
-      "name": "Movimiento al Socialismo (MAS)",
-      "national_alignment": "Movimiento al Socialismo"
+      "name": "Movimiento Al Socialismo (mas)",
+      "national_alignment": "Movimiento Al Socialismo"
     }
   },
   {
@@ -2503,8 +2503,8 @@
       "chamber": "diputados",
       "order": 6,
       "code": "506",
-      "name": "Frente de Izquierda y de Trabajadores – Unidad (FIT-U)",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores – Unidad (fit-u)",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -2515,8 +2515,8 @@
       "chamber": "diputados",
       "order": 7,
       "code": "SC01",
-      "name": "Defendamos Tierra del Fuego",
-      "national_alignment": "Otro/Local"
+      "name": "Defendamos Tierra Del Fuego",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2539,8 +2539,8 @@
       "chamber": "diputados",
       "order": 1,
       "code": "74",
-      "name": "Del Trabajo y del Pueblo (PTP)",
-      "national_alignment": "Otro/Local"
+      "name": "Del Trabajo Y Del Pueblo (ptp)",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2551,8 +2551,8 @@
       "chamber": "diputados",
       "order": 2,
       "code": "170",
-      "name": "Frente del Pueblo Unido",
-      "national_alignment": "Otro/Local"
+      "name": "Frente Del Pueblo Unido",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2564,7 +2564,7 @@
       "order": 3,
       "code": "181",
       "name": "Fuerza Republicana",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2575,8 +2575,8 @@
       "chamber": "diputados",
       "order": 4,
       "code": "216",
-      "name": "CREO",
-      "national_alignment": "Otro/Local"
+      "name": "Creo",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2587,8 +2587,8 @@
       "chamber": "diputados",
       "order": 5,
       "code": "222",
-      "name": "Política para la Clase Obrera",
-      "national_alignment": "Otro/Local"
+      "name": "Política Para La Clase Obrera",
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2600,7 +2600,7 @@
       "order": 6,
       "code": "501",
       "name": "Frente Tucumán Primero",
-      "national_alignment": "Otro/Local"
+      "national_alignment": "Otro/local"
     }
   },
   {
@@ -2623,8 +2623,8 @@
       "chamber": "diputados",
       "order": 8,
       "code": "503",
-      "name": "Frente de Izquierda y de Trabajadores - Unidad FIT-U",
-      "national_alignment": "Frente de Izquierda y de Trabajadores – Unidad"
+      "name": "Frente De Izquierda Y De Trabajadores - Unidad Fit-u",
+      "national_alignment": "Frente De Izquierda Y De Trabajadores – Unidad"
     }
   },
   {
@@ -2635,8 +2635,8 @@
       "chamber": "diputados",
       "order": 9,
       "code": "504",
-      "name": "Unidos por Tucumán",
-      "national_alignment": "Otro/Local"
+      "name": "Unidos Por Tucumán",
+      "national_alignment": "Otro/local"
     }
   }
 ]

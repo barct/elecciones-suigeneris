@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import json
+import string
 import unicodedata
 from collections import defaultdict
 from pathlib import Path
@@ -111,6 +112,13 @@ def normalise_code(raw_code: str, counters: dict[str, int], label: str) -> str:
         return code
     counters[label] += 1
     return f"SC{counters[label]:02d}"
+
+
+def to_title_caps(value: str) -> str:
+    stripped = value.strip()
+    if not stripped:
+        return stripped
+    return string.capwords(stripped)
 
 
 def load_rows() -> list[tuple[str, dict[str, str]]]:
@@ -241,8 +249,10 @@ def build_list_fixture(records: list[tuple[str, dict[str, str]]], district_ids: 
         for order, row in enumerate(rows, start=1):
             raw_code = pick_value(row, "numeroLista", "Nº de lista", allow_empty=True)
             code = normalise_code(raw_code, missing_codes, district_name)
-            name = pick_value(row, "agrupacion", "Agrupación")
-            alignment = pick_value(row, "agrupacionNacional", "Agrupación nacional (filo)")
+            name = to_title_caps(pick_value(row, "agrupacion", "Agrupación"))
+            alignment = to_title_caps(
+                pick_value(row, "agrupacionNacional", "Agrupación nacional (filo)")
+            )
 
             existing_details = recorded_details[district_name].get(code)
             if existing_details:
