@@ -83,8 +83,21 @@ mkdir -p "${DJANGO_STATIC_ROOT}"
 # Ensure runtime directories are owned by the Apache user.
 APACHE_USER="www-data"
 if id -u "${APACHE_USER}" >/dev/null 2>&1; then
+  if [[ -d "${PROJECT_ROOT}" ]]; then
+    chown root:"${APACHE_USER}" "${PROJECT_ROOT}"
+    chmod 775 "${PROJECT_ROOT}"
+  fi
   if [[ -f "${PROJECT_ROOT}/db.sqlite3" ]]; then
     chown "${APACHE_USER}:${APACHE_USER}" "${PROJECT_ROOT}/db.sqlite3"
+    chmod 660 "${PROJECT_ROOT}/db.sqlite3"
+    if [[ -f "${PROJECT_ROOT}/db.sqlite3-wal" ]]; then
+      chown "${APACHE_USER}:${APACHE_USER}" "${PROJECT_ROOT}/db.sqlite3-wal"
+      chmod 660 "${PROJECT_ROOT}/db.sqlite3-wal"
+    fi
+    if [[ -f "${PROJECT_ROOT}/db.sqlite3-shm" ]]; then
+      chown "${APACHE_USER}:${APACHE_USER}" "${PROJECT_ROOT}/db.sqlite3-shm"
+      chmod 660 "${PROJECT_ROOT}/db.sqlite3-shm"
+    fi
   fi
   if [[ -d "${PROJECT_ROOT}/media" ]]; then
     chown -R "${APACHE_USER}:${APACHE_USER}" "${PROJECT_ROOT}/media"
