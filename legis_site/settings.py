@@ -30,8 +30,17 @@ SECRET_KEY = os.getenv(
 DEBUG = os.getenv("DJANGO_DEBUG", "True").lower() in {"1", "true", "yes"}
 
 ALLOWED_HOSTS = [host.strip() for host in os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",") if host.strip()]
-if DEBUG and not ALLOWED_HOSTS:
-    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "[::1]"]
+fallback_hosts = ["localhost", "127.0.0.1", "[::1]"]
+if not ALLOWED_HOSTS:
+    ALLOWED_HOSTS = fallback_hosts.copy()
+else:
+    for host in fallback_hosts:
+        if host not in ALLOWED_HOSTS:
+            ALLOWED_HOSTS.append(host)
+
+PRIMARY_HOST = "legislativas2025.fernandohidalgo.com.ar"
+if PRIMARY_HOST not in ALLOWED_HOSTS:
+    ALLOWED_HOSTS.append(PRIMARY_HOST)
 
 
 # Application definition
