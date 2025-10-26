@@ -465,31 +465,12 @@ def dashboard(request):
 		}
 	)
 
-	timeline = [
-		{
-			"date": date(2025, 10, 26),
-			"title": "Elecciones generales",
-			"description": "Votación nacional en los 24 distritos electorales",
-		},
-		{
-			"date": date(2025, 10, 27),
-			"title": "Escrutinio definitivo",
-			"description": "La justicia electoral inicia el cómputo oficial",
-		},
-		{
-			"date": date(2025, 12, 10),
-			"title": "Asunción de bancas",
-			"description": "Inicio del mandato para las diputadas y diputados electos",
-		},
-	]
-
 	context = {
 		"page_title": "Elecciones Legislativas 2025",
 		"stats": stats,
 		"overall_distributions": overall_distributions,
 		"districts": districts_data,
 		"district_statuses": district_statuses,
-		"timeline": timeline,
 		"chamber_filter": chamber_filter,
 		"show_deputies": include_deputies,
 		"show_senators": include_senators,
