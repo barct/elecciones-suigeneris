@@ -52,6 +52,11 @@ class DashboardViewTests(TestCase):
 		self.assertEqual(len(districts), 1)
 		self.assertEqual(districts[0]["name"], "Distrito Test")
 
+		statuses = {item["name"]: item for item in response.context["district_statuses"]}
+		self.assertIn("Distrito Test", statuses)
+		self.assertTrue(statuses["Distrito Test"]["has_deputies"])
+		self.assertFalse(statuses["Distrito Test"]["has_senators"])
+
 		seats_by_list = {
 			entry["name"]: entry["seats"] for entry in districts[0]["deputies"]["lists"]
 		}
@@ -114,6 +119,10 @@ class DashboardViewTests(TestCase):
 		self.assertEqual(response.status_code, 200)
 		visible_districts = [entry["name"] for entry in response.context["districts"]]
 		self.assertNotIn("Distrito Sin Datos", visible_districts)
+		status_map = {entry["name"]: entry for entry in response.context["district_statuses"]}
+		self.assertIn("Distrito Sin Datos", status_map)
+		self.assertFalse(status_map["Distrito Sin Datos"]["has_deputies"])
+		self.assertFalse(status_map["Distrito Sin Datos"]["has_senators"])
 
 	def test_senate_allocation_majority_and_first_minority(self):
 		district = District.objects.create(
@@ -159,6 +168,8 @@ class DashboardViewTests(TestCase):
 		self.assertEqual(seats["Mayoría"], 2)
 		self.assertEqual(seats["Minoría"], 1)
 		self.assertEqual(seats["Tercera"], 0)
+		status_map = {entry["name"]: entry for entry in response.context["district_statuses"]}
+		self.assertTrue(status_map["Distrito Senado"]["has_senators"])
 
 	def test_overall_distributions_respect_deputies_filter(self):
 		district = District.objects.create(

@@ -223,6 +223,59 @@
       </section>
     {% endfor %}
   </div>
+
+  <div class="row">
+    <section class="col-12">
+      <div class="card card-outline card-secondary">
+        <div class="card-header border-0 d-flex justify-content-between align-items-center">
+          <h3 class="card-title mb-0">Cobertura por distrito</h3>
+          <span class="text-muted text-sm">Disponibilidad de datos por cámara</span>
+        </div>
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-sm mb-0">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Distrito</th>
+                  <th scope="col" class="text-center">Diputados</th>
+                  <th scope="col" class="text-center">Senadores</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for status in district_statuses %}
+                  <tr>
+                    <td class="align-middle">{{ status.name }}</td>
+                    <td class="text-center align-middle">
+                      {% if status.has_deputies %}
+                        <span class="badge badge-success">Con datos</span>
+                      {% else %}
+                        <span class="badge badge-secondary">Sin datos</span>
+                      {% endif %}
+                    </td>
+                    <td class="text-center align-middle">
+                      {% if status.senator_seats %}
+                        {% if status.has_senators %}
+                          <span class="badge badge-success">Con datos</span>
+                        {% else %}
+                          <span class="badge badge-secondary">Sin datos</span>
+                        {% endif %}
+                      {% else %}
+                        <span class="badge badge-light text-muted border">Sin renovación</span>
+                      {% endif %}
+                    </td>
+                  </tr>
+                {% empty %}
+                  <tr>
+                    <td colspan="3" class="text-center text-muted py-3">Todavía no hay distritos cargados en el sistema.</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 {% endblock %}
 
 {% block extra_js %}

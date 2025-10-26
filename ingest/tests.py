@@ -1,6 +1,7 @@
 from decimal import Decimal
 
 from django.contrib.messages import get_messages
+from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
 
@@ -15,6 +16,7 @@ class DataEntryViewTests(TestCase):
 			total_deputies=6,
 			registered_voters=1000,
 		)
+		self.user = User.objects.create_user(username="tester", password="secret")
 		self.list_a = List.objects.create(
 			district=self.district,
 			chamber=List.Chamber.DEPUTIES,
@@ -31,6 +33,7 @@ class DataEntryViewTests(TestCase):
 		)
 
 	def test_get_with_selection_returns_lists(self):
+		self.client.force_login(self.user)
 		response = self.client.get(
 			reverse("ingest:data-entry"),
 			{
@@ -43,6 +46,7 @@ class DataEntryViewTests(TestCase):
 		self.assertContains(response, "Lista B")
 
 	def test_post_updates_scrutiny_records(self):
+		self.client.force_login(self.user)
 		Scrutiny.objects.create(election_list=self.list_b, percentage=Decimal("10.00"))
 
 		response = self.client.post(
@@ -63,3 +67,8 @@ class DataEntryViewTests(TestCase):
 			Scrutiny.objects.filter(election_list=self.list_a, percentage=Decimal("55.50")).exists()
 		)
 		self.assertFalse(Scrutiny.objects.filter(election_list=self.list_b).exists())
+
+	def test_anonymous_user_redirected_to_login(self):
+		response = self.client.get(reverse("ingest:data-entry"), follow=False)
+		self.assertEqual(response.status_code, 302)
+		self.assertIn("/admin/login/", response.headers["Location"])

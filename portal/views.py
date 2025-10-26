@@ -140,6 +140,7 @@ def dashboard(request):
 		List.Chamber.SENATORS: 0,
 	}
 	latest_update = None
+	district_statuses: list[dict] = []
 
 	for district in district_queryset:
 		chamber_payload = {
@@ -251,6 +252,17 @@ def dashboard(request):
 			if senate_data["seats"]:
 				total_senate_seats += senate_data["seats"]
 		total_lists_by_chamber[List.Chamber.SENATORS] += len(senate_data["lists"])
+
+		district_statuses.append(
+			{
+				"id": district.id,
+				"name": district.name,
+				"has_deputies": has_deputy_data,
+				"has_senators": has_senate_data,
+				"deputy_seats": district.renewal_seats,
+				"senator_seats": district.senator_renewal_seats,
+			}
+		)
 
 		should_include_district = False
 		if include_deputies and has_deputy_data:
@@ -417,6 +429,7 @@ def dashboard(request):
 		"stats": stats,
 		"overall_distributions": overall_distributions,
 		"districts": districts_data,
+		"district_statuses": district_statuses,
 		"timeline": timeline,
 		"chamber_filter": chamber_filter,
 		"show_deputies": include_deputies,

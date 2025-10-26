@@ -1,7 +1,8 @@
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db import transaction
 from django.shortcuts import redirect, render
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.views import View
 
 from elections.models import District, List, Scrutiny
@@ -9,8 +10,9 @@ from elections.models import District, List, Scrutiny
 from .forms import ScrutinyForm, SelectionForm
 
 
-class DataEntryView(View):
+class DataEntryView(LoginRequiredMixin, View):
 	template_name = "ingest/data_entry.html"
+	login_url = reverse_lazy("admin:login")
 
 	def get(self, request):
 		selection_form = SelectionForm(request.GET or None)
