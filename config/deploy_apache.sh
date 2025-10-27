@@ -12,7 +12,8 @@ APACHE_SITES_AVAILABLE="/etc/apache2/sites-available"
 APACHE_CONF_AVAILABLE="/etc/apache2/conf-available"
 export DJANGO_STATIC_ROOT="${PROJECT_ROOT}/staticfiles"
 CERTBOT_DOMAIN="legislativas2025.fernandohidalgo.com.ar"
-CERTBOT_EMAIL="admin@example.com"
+CERTBOT_EMAIL="hidalgofernandojavier@gmail.com"
+APACHE_SSL_CONF="${APACHE_SITES_AVAILABLE}/${SITE_NAME}-ssl.conf"
 
 # Ensure the source tree is present and up to date before touching Apache.
 if [[ ! -d "${PROJECT_ROOT}" ]]; then
@@ -120,9 +121,9 @@ install_file() {
   echo "Installed ${source_file} -> ${destination}"
 }
 
-ensure_certbot_certificate() {
+obtain_certbot_certificate() {
   if [[ -z "${CERTBOT_DOMAIN}" || -z "${CERTBOT_EMAIL}" ]]; then
-    echo "Skipping Certbot setup; CERTBOT_DOMAIN or CERTBOT_EMAIL is empty."
+    echo "Skipping Certbot request; CERTBOT_DOMAIN or CERTBOT_EMAIL is empty."
     return
   fi
 
@@ -149,12 +150,86 @@ ensure_certbot_certificate() {
   fi
 
   echo "Requesting Let's Encrypt certificate for ${CERTBOT_DOMAIN}..."
-  certbot --apache \
+  certbot certonly \
+    --apache \
     --non-interactive \
     --agree-tos \
     -m "${CERTBOT_EMAIL}" \
-    -d "${CERTBOT_DOMAIN}" \
-    --redirect
+    -d "${CERTBOT_DOMAIN}"
+}
+
+configure_ssl_vhost() {
+  if [[ -z "${CERTBOT_DOMAIN}" ]]; then
+    echo "Skipping SSL virtual host; CERTBOT_DOMAIN is empty."
+    return
+  fi
+
+  if [[ ! -d "/etc/letsencrypt/live/${CERTBOT_DOMAIN}" ]]; then
+    echo "Skipping SSL virtual host; certificate directory missing." >&2
+    return
+  fi
+
+  if ! a2enmod ssl >/dev/null; then
+    echo "WARNING: a2enmod ssl returned a non-zero exit code." >&2
+  fi
+
+  local legacy_ssl_conf="${APACHE_SITES_AVAILABLE}/${SITE_NAME}-le-ssl.conf"
+  if [[ -f "${legacy_ssl_conf}" ]]; then
+    if ! a2dissite "${SITE_NAME}-le-ssl" >/dev/null; then
+      echo "WARNING: a2dissite ${SITE_NAME}-le-ssl returned a non-zero exit code." >&2
+    fi
+    rm -f "${legacy_ssl_conf}"
+  fi
+  rm -f "/etc/apache2/sites-enabled/${SITE_NAME}-le-ssl.conf" 2>/dev/null || true
+
+  cat > "${APACHE_SSL_CONF}" <<SSL_CONF
+<VirtualHost *:443>
+    ServerName ${CERTBOT_DOMAIN}
+    ServerAdmin ${CERTBOT_EMAIL}
+
+    DocumentRoot ${PROJECT_ROOT}
+
+    WSGIDaemonProcess ${SITE_NAME}_ssl \
+        python-home=${PROJECT_ROOT}/.venv \
+        python-path=${PROJECT_ROOT} \
+        processes=2 \
+        threads=4
+    WSGIProcessGroup ${SITE_NAME}_ssl
+    WSGIApplicationGroup %{GLOBAL}
+    WSGIScriptAlias / ${PROJECT_ROOT}/legis_site/wsgi.py
+
+    Alias /static/ ${DJANGO_STATIC_ROOT}/
+    <Directory ${DJANGO_STATIC_ROOT}/>
+        Require all granted
+    </Directory>
+
+    Alias /media/ ${PROJECT_ROOT}/media/
+    <Directory ${PROJECT_ROOT}/media/>
+        Require all granted
+    </Directory>
+
+    <Directory ${PROJECT_ROOT}/legis_site>
+        <Files wsgi.py>
+            Require all granted
+        </Files>
+    </Directory>
+
+    SetEnv DJANGO_SETTINGS_MODULE legis_site.settings
+    SetEnv PYTHONUNBUFFERED 1
+
+    SSLEngine on
+    SSLCertificateFile /etc/letsencrypt/live/${CERTBOT_DOMAIN}/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/${CERTBOT_DOMAIN}/privkey.pem
+    Include /etc/letsencrypt/options-ssl-apache.conf
+
+    ErrorLog \${APACHE_LOG_DIR}/${SITE_NAME}_ssl_error.log
+    CustomLog \${APACHE_LOG_DIR}/${SITE_NAME}_ssl_access.log combined
+</VirtualHost>
+SSL_CONF
+
+  if ! a2ensite "${SITE_NAME}-ssl" >/dev/null; then
+    echo "WARNING: a2ensite ${SITE_NAME}-ssl returned a non-zero exit code." >&2
+  fi
 }
 
 # Copy virtual host and optional envvars config.
@@ -169,12 +244,13 @@ if ! a2enconf "${SITE_NAME}-env" >/dev/null; then
   echo "WARNING: a2enconf ${SITE_NAME}-env returned a non-zero exit code." >&2
 fi
 
+obtain_certbot_certificate
+configure_ssl_vhost
+
 echo "Testing Apache configuration..."
 apache2ctl configtest
 
 echo "Reloading Apache service..."
 systemctl reload apache2
-
-ensure_certbot_certificate
 
 echo "Done. Check /var/log/apache2/legis_site_error.log for issues if the site is unreachable."
