@@ -128,12 +128,7 @@ obtain_certbot_certificate() {
   fi
 
   if [[ -d "/etc/letsencrypt/live/${CERTBOT_DOMAIN}" ]]; then
-    echo "Existing Let's Encrypt certificate found. Running certbot renew..."
-    if command -v certbot >/dev/null 2>&1; then
-      certbot renew --deploy-hook "systemctl reload apache2"
-    else
-      echo "WARNING: certbot not installed; cannot renew existing certificate." >&2
-    fi
+    echo "Existing Let's Encrypt certificate found for ${CERTBOT_DOMAIN}; skipping issuance."
     return
   fi
 
