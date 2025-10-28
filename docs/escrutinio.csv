@@ -1,0 +1,25 @@
+provincia,codigo,scopeId,url
+BUENOS AIRES,02,0000000000000000000000d2,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/0000000000000000000000d2/3/1/30
+CABA,01,00000000000000000000006e,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/00000000000000000000006e/3/1/30
+CATAMARCA,03,000000000000000000000136,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/000000000000000000000136/3/1/30
+CHACO,06,000000000000000000000262,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/000000000000000000000262/3/1/30
+CHUBUT,07,0000000000000000000002c6,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/0000000000000000000002c6/3/1/30
+CORRIENTES,05,0000000000000000000001fe,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/0000000000000000000001fe/3/1/30
+CÓRDOBA,04,00000000000000000000019a,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/00000000000000000000019a/3/1/30
+ENTRE RÍOS,08,00000000000000000000032a,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/00000000000000000000032a/3/1/30
+FORMOSA,09,00000000000000000000038e,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/00000000000000000000038e/3/1/30
+JUJUY,10,0000000000000000000003f2,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/0000000000000000000003f2/3/1/30
+LA PAMPA,11,000000000000000000000456,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/000000000000000000000456/3/1/30
+LA RIOJA,12,0000000000000000000004ba,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/0000000000000000000004ba/3/1/30
+MENDOZA,13,00000000000000000000051e,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/00000000000000000000051e/3/1/30
+MISIONES,14,000000000000000000000582,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/000000000000000000000582/3/1/30
+NEUQUÉN,15,0000000000000000000005e6,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/0000000000000000000005e6/3/1/30
+RÍO NEGRO,16,00000000000000000000064a,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/00000000000000000000064a/3/1/30
+SALTA,17,0000000000000000000006ae,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/0000000000000000000006ae/3/1/30
+SAN JUAN,18,000000000000000000000712,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/000000000000000000000712/3/1/30
+SAN LUIS,19,000000000000000000000776,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/000000000000000000000776/3/1/30
+SANTA CRUZ,20,0000000000000000000007da,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/0000000000000000000007da/3/1/30
+SANTA FE,21,00000000000000000000083e,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/00000000000000000000083e/3/1/30
+SANTIAGO DEL ESTERO,22,0000000000000000000008a2,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/0000000000000000000008a2/3/1/30
+TIERRA DEL FUEGO AeIAS,24,00000000000000000000096a,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/00000000000000000000096a/3/1/30
+TUCUMÁN,23,000000000000000000000906,https://resultados.elecciones.gob.ar/backend-difu/scope/data/getScopeDataMap/000000000000000000000906/3/1/30

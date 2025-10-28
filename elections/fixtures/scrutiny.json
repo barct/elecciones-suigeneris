@@ -1,0 +1,1982 @@
+[
+  {
+    "model": "elections.scrutiny",
+    "pk": 1,
+    "fields": {
+      "election_list": 1,
+      "percentage": "41.47",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 2,
+    "fields": {
+      "election_list": 2,
+      "percentage": "40.89",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 3,
+    "fields": {
+      "election_list": 3,
+      "percentage": "5.04",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 4,
+    "fields": {
+      "election_list": 4,
+      "percentage": "2.79",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 5,
+    "fields": {
+      "election_list": 5,
+      "percentage": "2.44",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 6,
+    "fields": {
+      "election_list": 6,
+      "percentage": "1.34",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 7,
+    "fields": {
+      "election_list": 7,
+      "percentage": "1.20",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 8,
+    "fields": {
+      "election_list": 8,
+      "percentage": "0.90",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 9,
+    "fields": {
+      "election_list": 9,
+      "percentage": "0.79",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 10,
+    "fields": {
+      "election_list": 10,
+      "percentage": "0.70",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 11,
+    "fields": {
+      "election_list": 11,
+      "percentage": "0.60",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 12,
+    "fields": {
+      "election_list": 12,
+      "percentage": "0.56",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 13,
+    "fields": {
+      "election_list": 13,
+      "percentage": "0.52",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 14,
+    "fields": {
+      "election_list": 14,
+      "percentage": "0.49",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 15,
+    "fields": {
+      "election_list": 15,
+      "percentage": "0.19",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 16,
+    "fields": {
+      "election_list": 16,
+      "percentage": "45.49",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 17,
+    "fields": {
+      "election_list": 17,
+      "percentage": "34.06",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 18,
+    "fields": {
+      "election_list": 18,
+      "percentage": "6.22",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 19,
+    "fields": {
+      "election_list": 19,
+      "percentage": "3.09",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 20,
+    "fields": {
+      "election_list": 20,
+      "percentage": "3.01",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 21,
+    "fields": {
+      "election_list": 21,
+      "percentage": "3.00",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 22,
+    "fields": {
+      "election_list": 22,
+      "percentage": "1.94",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 23,
+    "fields": {
+      "election_list": 23,
+      "percentage": "1.74",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 24,
+    "fields": {
+      "election_list": 24,
+      "percentage": "1.41",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 25,
+    "fields": {
+      "election_list": 25,
+      "percentage": "45.64",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 26,
+    "fields": {
+      "election_list": 26,
+      "percentage": "43.63",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 27,
+    "fields": {
+      "election_list": 27,
+      "percentage": "2.96",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 28,
+    "fields": {
+      "election_list": 28,
+      "percentage": "2.33",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 29,
+    "fields": {
+      "election_list": 29,
+      "percentage": "1.35",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 30,
+    "fields": {
+      "election_list": 30,
+      "percentage": "1.11",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 31,
+    "fields": {
+      "election_list": 31,
+      "percentage": "1.08",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 32,
+    "fields": {
+      "election_list": 32,
+      "percentage": "0.73",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 33,
+    "fields": {
+      "election_list": 33,
+      "percentage": "0.73",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 34,
+    "fields": {
+      "election_list": 34,
+      "percentage": "0.39",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 35,
+    "fields": {
+      "election_list": 35,
+      "percentage": "28.45",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 36,
+    "fields": {
+      "election_list": 36,
+      "percentage": "27.78",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 37,
+    "fields": {
+      "election_list": 37,
+      "percentage": "19.98",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 38,
+    "fields": {
+      "election_list": 38,
+      "percentage": "10.79",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 39,
+    "fields": {
+      "election_list": 39,
+      "percentage": "5.17",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 40,
+    "fields": {
+      "election_list": 40,
+      "percentage": "4.36",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 41,
+    "fields": {
+      "election_list": 41,
+      "percentage": "2.02",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 42,
+    "fields": {
+      "election_list": 42,
+      "percentage": "1.42",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 43,
+    "fields": {
+      "election_list": 43,
+      "percentage": "47.30",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 44,
+    "fields": {
+      "election_list": 44,
+      "percentage": "27.00",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 45,
+    "fields": {
+      "election_list": 45,
+      "percentage": "9.13",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 46,
+    "fields": {
+      "election_list": 46,
+      "percentage": "6.01",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 47,
+    "fields": {
+      "election_list": 47,
+      "percentage": "4.04",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 48,
+    "fields": {
+      "election_list": 48,
+      "percentage": "1.83",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 49,
+    "fields": {
+      "election_list": 49,
+      "percentage": "1.02",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 50,
+    "fields": {
+      "election_list": 50,
+      "percentage": "0.68",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 51,
+    "fields": {
+      "election_list": 51,
+      "percentage": "0.55",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 52,
+    "fields": {
+      "election_list": 52,
+      "percentage": "0.48",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 53,
+    "fields": {
+      "election_list": 53,
+      "percentage": "0.38",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 54,
+    "fields": {
+      "election_list": 54,
+      "percentage": "0.34",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 55,
+    "fields": {
+      "election_list": 55,
+      "percentage": "0.31",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 56,
+    "fields": {
+      "election_list": 56,
+      "percentage": "0.27",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 57,
+    "fields": {
+      "election_list": 57,
+      "percentage": "0.20",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 58,
+    "fields": {
+      "election_list": 58,
+      "percentage": "0.20",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 59,
+    "fields": {
+      "election_list": 59,
+      "percentage": "0.18",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 60,
+    "fields": {
+      "election_list": 60,
+      "percentage": "33.91",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 61,
+    "fields": {
+      "election_list": 61,
+      "percentage": "32.68",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 62,
+    "fields": {
+      "election_list": 62,
+      "percentage": "28.32",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 63,
+    "fields": {
+      "election_list": 63,
+      "percentage": "3.68",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 64,
+    "fields": {
+      "election_list": 64,
+      "percentage": "1.39",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 65,
+    "fields": {
+      "election_list": 65,
+      "percentage": "42.35",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 66,
+    "fields": {
+      "election_list": 66,
+      "percentage": "28.32",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 67,
+    "fields": {
+      "election_list": 67,
+      "percentage": "8.75",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 68,
+    "fields": {
+      "election_list": 68,
+      "percentage": "5.08",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 69,
+    "fields": {
+      "election_list": 69,
+      "percentage": "4.79",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 70,
+    "fields": {
+      "election_list": 70,
+      "percentage": "3.23",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 71,
+    "fields": {
+      "election_list": 71,
+      "percentage": "2.07",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 72,
+    "fields": {
+      "election_list": 72,
+      "percentage": "1.63",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 73,
+    "fields": {
+      "election_list": 73,
+      "percentage": "0.92",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 74,
+    "fields": {
+      "election_list": 74,
+      "percentage": "0.59",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 75,
+    "fields": {
+      "election_list": 75,
+      "percentage": "0.54",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 76,
+    "fields": {
+      "election_list": 76,
+      "percentage": "0.33",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 77,
+    "fields": {
+      "election_list": 77,
+      "percentage": "0.27",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 78,
+    "fields": {
+      "election_list": 78,
+      "percentage": "0.26",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 79,
+    "fields": {
+      "election_list": 79,
+      "percentage": "0.24",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 80,
+    "fields": {
+      "election_list": 80,
+      "percentage": "0.23",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 81,
+    "fields": {
+      "election_list": 81,
+      "percentage": "0.19",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 82,
+    "fields": {
+      "election_list": 82,
+      "percentage": "0.13",
+      "updated_at": "2025-10-27T01:40:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 83,
+    "fields": {
+      "election_list": 83,
+      "percentage": "52.91",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 84,
+    "fields": {
+      "election_list": 84,
+      "percentage": "34.39",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 85,
+    "fields": {
+      "election_list": 85,
+      "percentage": "3.65",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 86,
+    "fields": {
+      "election_list": 86,
+      "percentage": "3.56",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 87,
+    "fields": {
+      "election_list": 87,
+      "percentage": "2.50",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 88,
+    "fields": {
+      "election_list": 88,
+      "percentage": "1.77",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 89,
+    "fields": {
+      "election_list": 89,
+      "percentage": "1.18",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 90,
+    "fields": {
+      "election_list": 90,
+      "percentage": "57.39",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 91,
+    "fields": {
+      "election_list": 91,
+      "percentage": "36.71",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 92,
+    "fields": {
+      "election_list": 92,
+      "percentage": "3.78",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 93,
+    "fields": {
+      "election_list": 93,
+      "percentage": "1.13",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 94,
+    "fields": {
+      "election_list": 94,
+      "percentage": "0.97",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 95,
+    "fields": {
+      "election_list": 95,
+      "percentage": "37.42",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 96,
+    "fields": {
+      "election_list": 96,
+      "percentage": "19.82",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 97,
+    "fields": {
+      "election_list": 97,
+      "percentage": "15.52",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 98,
+    "fields": {
+      "election_list": 98,
+      "percentage": "15.07",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 99,
+    "fields": {
+      "election_list": 99,
+      "percentage": "9.90",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 100,
+    "fields": {
+      "election_list": 100,
+      "percentage": "1.42",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 101,
+    "fields": {
+      "election_list": 101,
+      "percentage": "0.81",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 102,
+    "fields": {
+      "election_list": 102,
+      "percentage": "44.51",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 103,
+    "fields": {
+      "election_list": 103,
+      "percentage": "43.59",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 104,
+    "fields": {
+      "election_list": 104,
+      "percentage": "8.63",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 105,
+    "fields": {
+      "election_list": 105,
+      "percentage": "2.04",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 106,
+    "fields": {
+      "election_list": 106,
+      "percentage": "1.20",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 107,
+    "fields": {
+      "election_list": 107,
+      "percentage": "43.61",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 108,
+    "fields": {
+      "election_list": 108,
+      "percentage": "43.28",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 109,
+    "fields": {
+      "election_list": 109,
+      "percentage": "5.61",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 110,
+    "fields": {
+      "election_list": 110,
+      "percentage": "3.26",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 111,
+    "fields": {
+      "election_list": 111,
+      "percentage": "1.94",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 112,
+    "fields": {
+      "election_list": 112,
+      "percentage": "1.34",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 113,
+    "fields": {
+      "election_list": 113,
+      "percentage": "0.92",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 114,
+    "fields": {
+      "election_list": 114,
+      "percentage": "53.81",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 115,
+    "fields": {
+      "election_list": 115,
+      "percentage": "24.96",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 116,
+    "fields": {
+      "election_list": 116,
+      "percentage": "8.02",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 117,
+    "fields": {
+      "election_list": 117,
+      "percentage": "5.40",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 118,
+    "fields": {
+      "election_list": 118,
+      "percentage": "3.45",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 119,
+    "fields": {
+      "election_list": 119,
+      "percentage": "2.95",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 120,
+    "fields": {
+      "election_list": 120,
+      "percentage": "1.00",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 121,
+    "fields": {
+      "election_list": 121,
+      "percentage": "0.36",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 122,
+    "fields": {
+      "election_list": 122,
+      "percentage": "37.13",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 123,
+    "fields": {
+      "election_list": 123,
+      "percentage": "30.06",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 124,
+    "fields": {
+      "election_list": 124,
+      "percentage": "9.40",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 125,
+    "fields": {
+      "election_list": 125,
+      "percentage": "8.39",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 126,
+    "fields": {
+      "election_list": 126,
+      "percentage": "4.25",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 127,
+    "fields": {
+      "election_list": 127,
+      "percentage": "3.80",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 128,
+    "fields": {
+      "election_list": 128,
+      "percentage": "2.21",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 129,
+    "fields": {
+      "election_list": 129,
+      "percentage": "1.48",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 130,
+    "fields": {
+      "election_list": 130,
+      "percentage": "1.43",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 131,
+    "fields": {
+      "election_list": 131,
+      "percentage": "1.26",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 132,
+    "fields": {
+      "election_list": 132,
+      "percentage": "0.53",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 133,
+    "fields": {
+      "election_list": 133,
+      "percentage": "33.46",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 134,
+    "fields": {
+      "election_list": 134,
+      "percentage": "31.43",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 135,
+    "fields": {
+      "election_list": 135,
+      "percentage": "13.15",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 136,
+    "fields": {
+      "election_list": 136,
+      "percentage": "7.19",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 137,
+    "fields": {
+      "election_list": 137,
+      "percentage": "6.08",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 138,
+    "fields": {
+      "election_list": 138,
+      "percentage": "4.51",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 139,
+    "fields": {
+      "election_list": 139,
+      "percentage": "2.14",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 140,
+    "fields": {
+      "election_list": 140,
+      "percentage": "1.13",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 141,
+    "fields": {
+      "election_list": 141,
+      "percentage": "0.85",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 142,
+    "fields": {
+      "election_list": 142,
+      "percentage": "34.38",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 143,
+    "fields": {
+      "election_list": 143,
+      "percentage": "29.45",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 144,
+    "fields": {
+      "election_list": 144,
+      "percentage": "25.96",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 145,
+    "fields": {
+      "election_list": 145,
+      "percentage": "3.14",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 146,
+    "fields": {
+      "election_list": 146,
+      "percentage": "2.94",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 147,
+    "fields": {
+      "election_list": 147,
+      "percentage": "2.76",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 148,
+    "fields": {
+      "election_list": 148,
+      "percentage": "1.33",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 149,
+    "fields": {
+      "election_list": 149,
+      "percentage": "38.34",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 150,
+    "fields": {
+      "election_list": 150,
+      "percentage": "33.26",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 151,
+    "fields": {
+      "election_list": 151,
+      "percentage": "12.25",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 152,
+    "fields": {
+      "election_list": 152,
+      "percentage": "6.55",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 153,
+    "fields": {
+      "election_list": 153,
+      "percentage": "3.22",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 154,
+    "fields": {
+      "election_list": 154,
+      "percentage": "2.34",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 155,
+    "fields": {
+      "election_list": 155,
+      "percentage": "1.65",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 156,
+    "fields": {
+      "election_list": 156,
+      "percentage": "1.64",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 157,
+    "fields": {
+      "election_list": 157,
+      "percentage": "0.71",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 158,
+    "fields": {
+      "election_list": 158,
+      "percentage": "34.45",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 159,
+    "fields": {
+      "election_list": 159,
+      "percentage": "31.02",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 160,
+    "fields": {
+      "election_list": 160,
+      "percentage": "26.00",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 161,
+    "fields": {
+      "election_list": 161,
+      "percentage": "1.89",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 162,
+    "fields": {
+      "election_list": 162,
+      "percentage": "1.61",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 163,
+    "fields": {
+      "election_list": 163,
+      "percentage": "1.53",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 164,
+    "fields": {
+      "election_list": 164,
+      "percentage": "1.42",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 165,
+    "fields": {
+      "election_list": 165,
+      "percentage": "1.28",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 166,
+    "fields": {
+      "election_list": 166,
+      "percentage": "0.76",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 167,
+    "fields": {
+      "election_list": 167,
+      "percentage": "51.46",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 168,
+    "fields": {
+      "election_list": 168,
+      "percentage": "33.41",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 169,
+    "fields": {
+      "election_list": 169,
+      "percentage": "6.79",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 170,
+    "fields": {
+      "election_list": 170,
+      "percentage": "3.67",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 171,
+    "fields": {
+      "election_list": 171,
+      "percentage": "3.49",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 172,
+    "fields": {
+      "election_list": 172,
+      "percentage": "1.14",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 173,
+    "fields": {
+      "election_list": 173,
+      "percentage": "32.10",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 174,
+    "fields": {
+      "election_list": 174,
+      "percentage": "31.70",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 175,
+    "fields": {
+      "election_list": 175,
+      "percentage": "15.42",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 176,
+    "fields": {
+      "election_list": 176,
+      "percentage": "7.75",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 177,
+    "fields": {
+      "election_list": 177,
+      "percentage": "4.87",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 178,
+    "fields": {
+      "election_list": 178,
+      "percentage": "3.56",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 179,
+    "fields": {
+      "election_list": 179,
+      "percentage": "3.32",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 180,
+    "fields": {
+      "election_list": 180,
+      "percentage": "1.24",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 181,
+    "fields": {
+      "election_list": 181,
+      "percentage": "40.67",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 182,
+    "fields": {
+      "election_list": 182,
+      "percentage": "28.70",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 183,
+    "fields": {
+      "election_list": 183,
+      "percentage": "18.32",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 184,
+    "fields": {
+      "election_list": 184,
+      "percentage": "3.17",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 185,
+    "fields": {
+      "election_list": 185,
+      "percentage": "1.82",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 186,
+    "fields": {
+      "election_list": 186,
+      "percentage": "1.25",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 187,
+    "fields": {
+      "election_list": 187,
+      "percentage": "0.90",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 188,
+    "fields": {
+      "election_list": 188,
+      "percentage": "0.85",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 189,
+    "fields": {
+      "election_list": 189,
+      "percentage": "0.83",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 190,
+    "fields": {
+      "election_list": 190,
+      "percentage": "0.61",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 191,
+    "fields": {
+      "election_list": 191,
+      "percentage": "0.61",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 192,
+    "fields": {
+      "election_list": 192,
+      "percentage": "0.58",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 193,
+    "fields": {
+      "election_list": 193,
+      "percentage": "0.58",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 194,
+    "fields": {
+      "election_list": 194,
+      "percentage": "0.46",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 195,
+    "fields": {
+      "election_list": 195,
+      "percentage": "0.36",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 196,
+    "fields": {
+      "election_list": 196,
+      "percentage": "0.23",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 197,
+    "fields": {
+      "election_list": 197,
+      "percentage": "50.60",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 198,
+    "fields": {
+      "election_list": 198,
+      "percentage": "20.34",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 199,
+    "fields": {
+      "election_list": 199,
+      "percentage": "15.16",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 200,
+    "fields": {
+      "election_list": 200,
+      "percentage": "10.93",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 201,
+    "fields": {
+      "election_list": 201,
+      "percentage": "1.16",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 202,
+    "fields": {
+      "election_list": 202,
+      "percentage": "1.00",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 203,
+    "fields": {
+      "election_list": 203,
+      "percentage": "0.79",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 204,
+    "fields": {
+      "election_list": 204,
+      "percentage": "38.57",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 205,
+    "fields": {
+      "election_list": 205,
+      "percentage": "30.99",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 206,
+    "fields": {
+      "election_list": 206,
+      "percentage": "20.70",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 207,
+    "fields": {
+      "election_list": 207,
+      "percentage": "3.24",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 208,
+    "fields": {
+      "election_list": 208,
+      "percentage": "3.15",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 209,
+    "fields": {
+      "election_list": 209,
+      "percentage": "1.43",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 210,
+    "fields": {
+      "election_list": 210,
+      "percentage": "0.99",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 211,
+    "fields": {
+      "election_list": 211,
+      "percentage": "0.89",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 212,
+    "fields": {
+      "election_list": 212,
+      "percentage": "50.55",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 213,
+    "fields": {
+      "election_list": 213,
+      "percentage": "35.16",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 214,
+    "fields": {
+      "election_list": 214,
+      "percentage": "8.07",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 215,
+    "fields": {
+      "election_list": 215,
+      "percentage": "2.17",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 216,
+    "fields": {
+      "election_list": 216,
+      "percentage": "1.66",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 217,
+    "fields": {
+      "election_list": 217,
+      "percentage": "0.82",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 218,
+    "fields": {
+      "election_list": 218,
+      "percentage": "0.57",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 219,
+    "fields": {
+      "election_list": 219,
+      "percentage": "0.53",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  },
+  {
+    "model": "elections.scrutiny",
+    "pk": 220,
+    "fields": {
+      "election_list": 220,
+      "percentage": "0.43",
+      "updated_at": "2025-10-27T01:45:08Z"
+    }
+  }
+]

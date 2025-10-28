@@ -5,10 +5,10 @@
     "fields": {
       "name": "Buenos Aires",
       "renewal_seats": 35,
-      "total_deputies": 70,
-      "registered_voters": 13353974,
+      "total_deputies": 35,
+      "registered_voters": 13349014,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -17,10 +17,10 @@
     "fields": {
       "name": "Catamarca",
       "renewal_seats": 3,
-      "total_deputies": 5,
-      "registered_voters": 347282,
+      "total_deputies": 3,
+      "registered_voters": 347301,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -29,10 +29,10 @@
     "fields": {
       "name": "Chaco",
       "renewal_seats": 4,
-      "total_deputies": 7,
-      "registered_voters": 1015693,
-      "senator_renewal_seats": 3,
-      "total_senators": 3
+      "total_deputies": 4,
+      "registered_voters": 1012209,
+      "senator_renewal_seats": 0,
+      "total_senators": 0
     }
   },
   {
@@ -41,10 +41,10 @@
     "fields": {
       "name": "Chubut",
       "renewal_seats": 2,
-      "total_deputies": 5,
-      "registered_voters": 453021,
+      "total_deputies": 2,
+      "registered_voters": 485030,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -53,10 +53,10 @@
     "fields": {
       "name": "Ciudad Autónoma de Buenos Aires",
       "renewal_seats": 13,
-      "total_deputies": 25,
-      "registered_voters": 2520249,
-      "senator_renewal_seats": 3,
-      "total_senators": 3
+      "total_deputies": 13,
+      "registered_voters": 2518370,
+      "senator_renewal_seats": 0,
+      "total_senators": 0
     }
   },
   {
@@ -65,10 +65,10 @@
     "fields": {
       "name": "Corrientes",
       "renewal_seats": 3,
-      "total_deputies": 7,
-      "registered_voters": 950576,
+      "total_deputies": 3,
+      "registered_voters": 951492,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -77,10 +77,10 @@
     "fields": {
       "name": "Córdoba",
       "renewal_seats": 9,
-      "total_deputies": 18,
-      "registered_voters": 3084000,
+      "total_deputies": 9,
+      "registered_voters": 3119246,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -89,10 +89,10 @@
     "fields": {
       "name": "Entre Ríos",
       "renewal_seats": 5,
-      "total_deputies": 9,
-      "registered_voters": 1053652,
-      "senator_renewal_seats": 3,
-      "total_senators": 3
+      "total_deputies": 5,
+      "registered_voters": 1155481,
+      "senator_renewal_seats": 0,
+      "total_senators": 0
     }
   },
   {
@@ -101,10 +101,10 @@
     "fields": {
       "name": "Formosa",
       "renewal_seats": 2,
-      "total_deputies": 5,
-      "registered_voters": 491565,
+      "total_deputies": 2,
+      "registered_voters": 491793,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -113,10 +113,10 @@
     "fields": {
       "name": "Jujuy",
       "renewal_seats": 3,
-      "total_deputies": 6,
-      "registered_voters": 602380,
+      "total_deputies": 3,
+      "registered_voters": 603070,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -125,10 +125,10 @@
     "fields": {
       "name": "La Pampa",
       "renewal_seats": 3,
-      "total_deputies": 5,
-      "registered_voters": 304693,
+      "total_deputies": 3,
+      "registered_voters": 304657,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -137,10 +137,10 @@
     "fields": {
       "name": "La Rioja",
       "renewal_seats": 2,
-      "total_deputies": 5,
-      "registered_voters": 309186,
+      "total_deputies": 2,
+      "registered_voters": 309861,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -149,10 +149,10 @@
     "fields": {
       "name": "Mendoza",
       "renewal_seats": 5,
-      "total_deputies": 10,
-      "registered_voters": 1525824,
+      "total_deputies": 5,
+      "registered_voters": 1523787,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -161,10 +161,10 @@
     "fields": {
       "name": "Misiones",
       "renewal_seats": 3,
-      "total_deputies": 7,
-      "registered_voters": 994317,
+      "total_deputies": 3,
+      "registered_voters": 1006612,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -173,10 +173,10 @@
     "fields": {
       "name": "Neuquén",
       "renewal_seats": 3,
-      "total_deputies": 5,
-      "registered_voters": 609951,
-      "senator_renewal_seats": 3,
-      "total_senators": 3
+      "total_deputies": 3,
+      "registered_voters": 581493,
+      "senator_renewal_seats": 0,
+      "total_senators": 0
     }
   },
   {
@@ -185,10 +185,10 @@
     "fields": {
       "name": "Río Negro",
       "renewal_seats": 2,
-      "total_deputies": 5,
-      "registered_voters": 617054,
-      "senator_renewal_seats": 3,
-      "total_senators": 3
+      "total_deputies": 2,
+      "registered_voters": 611813,
+      "senator_renewal_seats": 0,
+      "total_senators": 0
     }
   },
   {
@@ -197,10 +197,10 @@
     "fields": {
       "name": "Salta",
       "renewal_seats": 3,
-      "total_deputies": 7,
-      "registered_voters": 1111029,
-      "senator_renewal_seats": 3,
-      "total_senators": 3
+      "total_deputies": 3,
+      "registered_voters": 1117068,
+      "senator_renewal_seats": 0,
+      "total_senators": 0
     }
   },
   {
@@ -209,10 +209,10 @@
     "fields": {
       "name": "San Juan",
       "renewal_seats": 3,
-      "total_deputies": 6,
-      "registered_voters": 606278,
+      "total_deputies": 3,
+      "registered_voters": 620784,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -221,10 +221,10 @@
     "fields": {
       "name": "San Luis",
       "renewal_seats": 3,
-      "total_deputies": 5,
-      "registered_voters": 399321,
+      "total_deputies": 3,
+      "registered_voters": 429195,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -233,10 +233,10 @@
     "fields": {
       "name": "Santa Cruz",
       "renewal_seats": 3,
-      "total_deputies": 5,
-      "registered_voters": 288732,
+      "total_deputies": 3,
+      "registered_voters": 271975,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -245,10 +245,10 @@
     "fields": {
       "name": "Santa Fe",
       "renewal_seats": 9,
-      "total_deputies": 19,
-      "registered_voters": 2815453,
+      "total_deputies": 9,
+      "registered_voters": 2849851,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   },
   {
@@ -257,10 +257,10 @@
     "fields": {
       "name": "Santiago del Estero",
       "renewal_seats": 3,
-      "total_deputies": 7,
-      "registered_voters": 813327,
-      "senator_renewal_seats": 3,
-      "total_senators": 3
+      "total_deputies": 3,
+      "registered_voters": 826887,
+      "senator_renewal_seats": 0,
+      "total_senators": 0
     }
   },
   {
@@ -269,10 +269,10 @@
     "fields": {
       "name": "Tierra del Fuego",
       "renewal_seats": 2,
-      "total_deputies": 5,
-      "registered_voters": 162527,
-      "senator_renewal_seats": 3,
-      "total_senators": 3
+      "total_deputies": 2,
+      "registered_voters": 153123,
+      "senator_renewal_seats": 0,
+      "total_senators": 0
     }
   },
   {
@@ -281,10 +281,10 @@
     "fields": {
       "name": "Tucumán",
       "renewal_seats": 4,
-      "total_deputies": 9,
-      "registered_voters": 1341563,
+      "total_deputies": 4,
+      "registered_voters": 1341246,
       "senator_renewal_seats": 0,
-      "total_senators": 3
+      "total_senators": 0
     }
   }
 ]
